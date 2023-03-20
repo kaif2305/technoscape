@@ -102,6 +102,15 @@ li span {
   object-fit: contain;
 }
 
+.clock-bg img[id=dates2] {
+  width: 90%;
+  height: 70%;
+  bottom: 1.5%;
+  position: absolute;
+  object-fit: contain;
+  visibility: hidden;
+}
+
 .container {
   position: absolute;
   right: 10%;
@@ -177,14 +186,26 @@ li span {
   
 
   .clock-bg {
-    height: 35%;
+    height: 40%;
   }
 
   .clock-bg img[id=dates] {
-    width: 100%;
+    /* width: 100%;
     height: 80;
     margin-left: 0%;
-  margin-right: 0%;
+  margin-right: 0%; */
+  visibility: hidden;
+  }
+  
+  .clock-bg img[id=dates2] {
+    width: 100%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    height: 70%;
+    bottom: 1.5%;
+    position: absolute;
+    object-fit: contain;
+    visibility: visible;
   }
   .container li {
     font-size: 12px;
