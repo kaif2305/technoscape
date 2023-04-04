@@ -13,7 +13,7 @@ body {
 
 .register-details {
   min-height: 100vh;
-  background-image: url("water-background.jpg");
+  background-image: url("../img/water-background.jpg");
   display: flex;
   flex-wrap: wrap-reverse;
   z-index: 1;
