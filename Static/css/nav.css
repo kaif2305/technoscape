@@ -39,14 +39,33 @@ header{
 	height: 100%;
 	left: 0;
 	padding-left: 4%;
+	
 }
+@media screen and  (max-width: 500px)
 
+{
+
+.header-left{
+	display:none;
+}
+.header-center img{
+	
+	width: 200%;
+	height: 200%;
+}
+div.header-center
+{
+	width: 50%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+}
 .header-left img
 {
 	width: 50%;
 	height: 70%;
 	padding-top:3%;
-	object-fit: contain;
+	object-fit: fill;
 }
 
 .header-left img[id='logo3']
