@@ -1,0 +1,98 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap'); */
+
+body
+{
+    margin: 0;
+}
+
+.hero
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+
+    
+}
+
+.content a:hover
+{
+    background-color: #fff;
+    color: black;
+    border: none;
+  box-shadow: 0px 15px 20px rgba(34, 34, 34, 0.668);
+  transform: translateY(-7px);
+}
+
+.back-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to bottom, rgb(0 0 0 / 50%), rgb(0 0 0 / 10%));
+}
+
+@media screen and (max-width: 450px) {
+    .content a{
+        font-size: 15px;
+        border: 1px solid #fff;
+        padding: 10px 50px;
+        border-radius: 50px;
+        margin-top: 10px;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;  
+    }
+
+    .content h1 img{
+        width: 60%;
+    }
+}

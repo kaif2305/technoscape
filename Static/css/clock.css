@@ -1,0 +1,218 @@
+:root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  /* align-items: center; */
+  background-color: #ffffff;
+  /* display: flex; */
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.container {
+  color: #333;
+  margin-left: 20;
+  margin-right: 20;
+  text-align: center;
+
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.2em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 3.5rem;
+}
+
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+
+
+
+
+
+/* BG */
+
+.clock-bg {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  box-shadow: #22222214;
+}
+
+.clock-bg img[id=bg] {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.clock-bg img[id=dates] {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 70%;
+  bottom: 1.5%;
+  position: absolute;
+  object-fit: contain;
+}
+
+.clock-bg img[id=dates2] {
+  width: 90%;
+  height: 75%;
+  bottom: 1.5%;
+  position: absolute;
+  object-fit: contain;
+  visibility: hidden;
+}
+
+.container {
+  position: absolute;
+  right: 10%;
+  width: 80%;
+  top: 3%;
+}
+
+#countdown {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 30%;
+}
+
+@media screen and (max-width:1180px) {
+
+  .clock-bg {
+    height: 60%;
+  }
+
+  .container li {
+    font-size: 15px;
+  }
+
+  .container li span
+  {
+    font-size: 25px;
+  }
+
+}
+
+
+@media screen and (max-width:1050px) {
+
+  .clock-bg {
+    height: 50%;
+  }
+  .container li {
+    font-size: 15px;
+  }
+
+  .container li span
+  {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:850px) {
+ 
+  .clock-bg {
+    height: 40%;
+  }
+
+  .clock-bg img[id=dates] {
+    width: 100%;
+    height: 80;
+    margin-left: 0%;
+  margin-right: 0%;
+  }
+
+  .container li {
+    font-size: 12px;
+  }
+
+  .container li span
+  {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width:450px) {
+  
+
+  .clock-bg {
+    height: 40%;
+  }
+
+  .clock-bg img[id=dates] {
+    /* width: 100%;
+    height: 80;
+    margin-left: 0%;
+  margin-right: 0%; */
+  visibility: hidden;
+  }
+  
+  .clock-bg img[id=dates2] {
+    width: 100%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    height: 75%;
+    bottom: 1.5%;
+    position: absolute;
+    object-fit: contain;
+    visibility: visible;
+  }
+  .container li {
+    font-size: 12px;
+  }
+
+  .container li span
+  {
+    font-size: 18px;
+  }
+}

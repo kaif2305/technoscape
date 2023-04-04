@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    margin: 0;
+}
+
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: -126px;
+    
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-container {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+
+}
+
+.top-container img {
+    width: auto;
+    margin-top: 3%;
+}
+
+
+
+.middle-container {
+   margin-left: 10%;
+   width: 80%;
+   margin-right: 10%;
+    top: 25%;
+    position: absolute;
+    text-align: center;
+    font-family: 'montserrat';
+    color: #fff;
+    z-index: 1;
+}
+
+
+.middle-container h1 {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.middle-container h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+}
+
+.middle-container h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.middle-container a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    margin-top: 10px;
+    font-weight: 400;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.middle-container a:hover {
+    background-color: #fff;
+    color: black;
+    border: none;
+  box-shadow: 0px 15px 20px rgba(34, 34, 34, 0.668);
+  transform: translateY(-7px);
+}
+
+
+.bottom-container {
+    bottom: 1.5%;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    text-align: center;
+
+}
+
+.bottom-container img[id=left] {
+    width: auto;
+    left: 0.4%;
+    height: 80%;
+    bottom: 0;
+    position: absolute;
+}
+
+.bottom-container img[id=right] {
+    width: auto;
+    height: 60%;
+    bottom: 0;
+    right: 2%;
+    position: absolute;
+    z-index:1;
+}
+
+.bottom-container img[id=collab] {
+    width: auto;
+    height: 100%;
+    bottom: 0;
+    align-self: center;
+    position: relative;
+}
+
+@media screen and (max-width: 850px) {
+
+    .bottom-container {
+        height: 14%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+
+    .middle-container h1 {
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .middle-container h2 {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    .middle-container h3 {
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    
+    .middle-container a {
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        border: 2px solid #fff;
+        padding: 10px 50px;
+        margin-top: 5px;
+        font-weight: 400;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+
+    .bottom-container {
+        height: 15%;
+    }
+
+    .bottom-container img[id=right] {
+        visibility: hidden;
+        width: auto;
+        height: 60%;
+        bottom: 0;
+        right: 2%;
+        position: absolute;
+    }
+
+    .bottom-container img[id=left] {
+        visibility: hidden;
+        width: auto;
+        height: 60%;
+        bottom: 0;
+        right: 2%;
+        position: absolute;
+    }
+}
+.register-box{
+    height: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+   
+    
+    
+    
+    
+}
+.register-box img[id=water]
+{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+  
+  
+
+.register-box h1 {
+    position: absolute;
+    right: 40%;
+    left: 40%;
+    top: 5%;
+    bottom: 15%;
+    font-family: 'montserrat';
+
+
+}
+
+.register-box .text {
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    top: 40%;
+    font-family: 'montserrat';
+    font-size:25px ;
+
+
+
+}
+.register-box .text a{
+    
+
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    font-weight: 400;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    padding: 14px 70px;
+
+
+}
+
+.register-box .text  a:hover {
+    background-color: #fff;
+    color: black;
+    border: none;
+    box-shadow: 0px 15px 20px rgba(34, 34, 34, 0.668);
+    transform: translateY(-7px);
+  
+}
+.clock-bg{
+  z-index: -1;
+}
+
+footer{
+    aspect-ratio: 1/0.33;
+    position: relative;
+    background: #0C6E98;
+    width: 100%;
+    bottom: 0;
+    top: 10%;
+    left: 0;
+    margin-top: 0%;
+    z-index: -1;
+   
+    
+  }
+  
+  .content
+  {
+    font-family: 'montserrat';
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  
+  .left-content
+  {
+    padding-top: 5%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .left-content img
+  {
+    width: 85%;
+    object-fit: contain;
+  }
+  
+  .details
+  {
+       width: 100%;
+      height: 18%;
+      /* margin-top: 1%; */
+      display: flex;
+      left: 0;
+      flex-direction: row;
+  
+  }
+  
+  .details img
+  {
+    width: 20%;
+    height: 70%;
+    object-fit: contain;
+  }
+  
+  .address
+  {
+    margin: 0;
+  }
+  .address p
+  {
+    color: white;
+    font-size: 1cqw;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .container2
+  {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    padding-top: 13%;
+  }
+  
+  .nav
+  {
+    height: 14%;
+    font-size: 1cqw;
+  }
+  
+  .nav a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .calc-container
+  {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+  }
+  .calc-container h1
+  {
+    font-size: 2.5cqw;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .calc-container h2
+  {
+    font-size: 0.9cqw;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 400;
+    padding-left: 1%;
+    padding-top: 1%;
+  }
+  
+  .calc-details
+  {
+    width: 100%;
+  }
+  
+  .detail-cont
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .detail-cont input
+  {
+    
+    width: 48%;
+    font-size: 1cqw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-bottom: 4%;
+    margin-top: 5%;
+    margin-right: 2%;
+  }
+  
+  .detail-cont input::placeholder
+  {
+    color: white;
+    font-family: 'montserrat' ;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .calc-details input
+  {
+    width: 98%;
+    font-size: 1cqw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-bottom: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+  }
+  
+  .calc-details input::placeholder
+  {
+    color: white;
+    font-family: 'montserrat' ;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .calc-details input:focus
+  {
+    outline: none;
+    
+  }
+  
+  
+  .calc-container button
+  {
+    background-color: #0C6E98;
+    color: white;
+    padding: 2% 3%;
+    border: 1px solid white;
+    margin-left: 68%;
+    font-size: 1cqw;
+    width: 30%;
+    margin-top: 3%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .calc-container button:hover
+  {
+    background-color: white;
+    color: #0C6E98;
+  }
+  
+  
+  
+  .bottom-details
+  {
+    width: 80%;
+    border-top: 1px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .bottom-details h1
+  {
+    font-size: 1cqw;
+    color: white;
+    font-weight: 400;
+    font-family: 'montserrat';
+    width: 10%;
+    margin-left: 41%;
+  }
+  
+  
+  .bottom-details button
+  {
+    padding: 0.7% 3%;
+    font-size: 0.9cqw;
+    margin-top: 0.5%;
+    width: 8%;
+    margin-left: 40%;
+    background-color: #91DAA6;
+    color: black;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .bottom-details button:hover{
+    background-color: white;
+  }
+
+
+ 

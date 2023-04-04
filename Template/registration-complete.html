@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration complete</title>
+    <link rel="stylesheet" href="../Static/css/reg_check.css" />
+    <link rel="stylesheet" href="../Static/css/reg_complete.css" />
+    <link rel="stylesheet" href="../Static/css/nav.css" />
+  </head>
+  
+  
+  <body>
+
+    
+    <script>
+      // get query param "code"
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get("code");
+      // get #action
+      const action = document.getElementById("action");
+
+      if (typeof code === "string") {
+        document.getElementById("code").innerHTML = `TSIT: ${code}`;
+        action.onclick = async (e) => {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          e.stopPropagation();
+
+          // send email
+          const sendEmail = (code) => {
+            return fetch(
+              `https://technoscape-abstract-backend.onrender.com/users/resendEmail/${code}`,
+              {
+                method: "PUT",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+          };
+          const response = await sendEmail(code);
+          if (response.status === 200) {
+            alert("email successfully sent");
+          } else if (response.status === 404) {
+            alert("There was an error with your registration.");
+          } else if (response.status === 400) {
+            alert("email already verified");
+          } else {
+            alert(
+              "email was not sent due to an internal error. try again later"
+            );
+          }
+          console.log("email sent");
+        };
+      } else {
+        console.log("code is not a string");
+        // get #status-text
+        const statusText = document.getElementById("status-text");
+        statusText.innerHTML = "Your email is successfully verified.";
+        statusText.style.color = "green";
+
+        // get #extra-info
+        const extraInfo = document.getElementById("extra-info");
+        extraInfo.innerHTML =
+          "You can monitor progress of your submission in the dashboard.";
+
+        // modify #action
+        action.innerHTML = '<a href="dashboard.html">Go to Dashboard</a>';
+        action.onclick = (e) => {
+          window.location.href = "dashboard.html";
+        };
+      }
+    </script>
+  </body>
+</html>
