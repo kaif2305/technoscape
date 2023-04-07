@@ -1,0 +1,346 @@
+
+body
+{
+  margin: 0;
+}
+
+footer{
+    height: 65%;
+    position: relative;
+    background: #0C6E98;
+    width: 100%;
+    bottom: 0;
+    top: 10%;
+    left: 0;
+    margin-top: 0%;
+    z-index: -1;
+   
+    
+  }
+  
+  .content
+  {
+    font-family: 'montserrat';
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+  }
+  
+  .left-content
+  {
+    padding-top: 5%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  .left-content img
+  {
+    width: 85%;
+    object-fit: contain;
+  }
+  
+  .details
+  {
+       width: 100%;
+      height: 18%;
+      /* margin-top: 1%; */
+      display: flex;
+      left: 0;
+      flex-direction: row;
+  
+  }
+  
+  .details img
+  {
+    width: 20%;
+    height: 70%;
+    object-fit: contain;
+  }
+  
+  .address
+  {
+    margin: 0;
+  }
+  .address p
+  {
+    color: white;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .container2
+  {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    padding-top: 13%;
+  }
+  
+  .nav
+  {
+    height: 14%;
+    font-size: 15px;
+  }
+  
+  .nav a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .calc-container
+  {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+  }
+  .calc-container h1
+  {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .calc-container h2
+  {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 400;
+    padding-left: 1%;
+    padding-top: 1%;
+  }
+  
+  .calc-details
+  {
+    width: 100%;
+  }
+  
+  .detail-cont
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .detail-cont input
+  {
+    
+    width: 48%;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-bottom: 4%;
+    margin-top: 5%;
+    margin-right: 2%;
+  }
+  
+  .detail-cont input::placeholder
+  {
+    color: white;
+    font-family: 'montserrat' ;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .calc-details input
+  {
+    width: 98%;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-bottom: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+  }
+  
+  .calc-details input::placeholder
+  {
+    color: white;
+    font-family: 'montserrat' ;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .calc-details input:focus
+  {
+    outline: none;
+    
+  }
+  
+  
+  .calc-container button
+  {
+    background-color: #0C6E98;
+    color: white;
+    padding: 2% 3%;
+    border: 1px solid white;
+    margin-left: 73%;
+    font-size: 15px;
+    width: 25%;
+    margin-top: 3%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .calc-container button:hover
+  {
+    background-color: white;
+    color: #0C6E98;
+  }
+  
+  
+  
+  .bottom-details
+  {
+    width: 80%;
+    border-top: 1px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .bottom-details h1
+  {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    padding-top: 1%;
+    font-family: 'montserrat';
+    width: 10%;
+    margin-left: 41%;
+  }
+  
+  
+  .bottom-details button
+  {
+    padding: 0.7% 3%;
+    font-size: 15px;
+    margin-top: 0.5%;
+    width: 8%;
+    margin-left: 40%;
+    background-color: #91DAA6;
+    color: black;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .bottom-details button:hover{
+    background-color: white;
+  }
+
+
+  @media screen and (max-width: 1000px)
+  {
+    footer
+        {
+            height: 130%;
+        }
+        .content
+        {
+          height: 90%;
+        }
+    .left-content
+    {
+        width: 90%;
+        height: 30%;
+    }
+    .container2
+    {
+        width: 30%;
+        height: 40%;
+    }
+    .details
+    {
+        height: 25%;
+    }
+
+    .calc-container
+    {
+        width: 100%;
+        height: 40%;
+    }
+
+    .bottom-details h1
+    {
+        margin-left: 15%;
+    }
+
+    .bottom-details button
+    
+    {
+        width: 20%;
+        height: 20%;
+        margin-left: 50%;
+    }
+}
+
+  @media screen and (max-width: 1000px)
+  {
+    
+        .content
+        {
+          height: 90%;
+        }
+    .left-content
+    {
+        width: 90%;
+        height: 30%;
+    }
+    .container2
+    {
+        width: 30%;
+        height: 40%;
+    }
+    .details
+    {
+        height: 25%;
+    }
+
+    .calc-container
+    {
+        width: 100%;
+        height: 40%;
+    }
+
+    .bottom-details h1
+    {
+        margin-left: 15%;
+    }
+
+    .bottom-details button
+    
+    {
+        width: 20%;
+        height: 20%;
+        margin-left: 50%;
+    }
+
+    footer
+    {
+      margin-top: 300%;
+      height: 200%;
+    }
+}
