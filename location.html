@@ -1,56 +1,62 @@
+<!DOCTYPE html>
+
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="./Static/css/location.css">
-	<link rel="stylesheet" href="./Static/css/nav.css">
-	<link rel="stylesheet" href="./Static/css/home.css">
 	<link rel="stylesheet" href="./Static/css/footer.css">
+	<link rel="stylesheet" href="./Static/css/nav.css">
 
 
-
+	<div class="page" >
+        <header>
+         <div class="header-left">
+           <img id="logo1" src="./Static/img/vit.png" alt="vit-logo">
+             <img id="logo3" src="./Static/img/sdg.png" alt="sdg-logo">
+         </div>
+     
+         <div class="header-center">
+           <img id="logo2" src="./Static/img/Technoscape black_ black 23_blue_20 logo.png" alt="logo">
+         </div>
+           <div class="header-right">
+     
+           
+             <nav role='navigation'>
+                 <label id="menuToggle">
+                     <input type="checkbox" />
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <ul id="menu">
+                         <a href="/home.html"><li>Home</li></a>
+                         <a href ="/about.html"><li>About</li></a>
+                         <a href ="/conference.html"><li>Conference</li></a>
+                         <a href ="/committee.html"><li>Committee</li></a>
+						 <a href ="#"><li>Advisory Committee</li></a>
+                         <a href ="/partners.html"><li>Partners</li></a>
+                         <a href ="/location.html"><li>Location</li></a>
+                         <a href ="#contact-us"><li>Contact Us</li></a>
+                         <a href ="/registration.html"><li>Abstraction Submission</li></a>
+                     </ul>
+                 </label>
+             </nav>
+         </header>
+         </div>
 	
 </head>
 
 <body>
-
-	<div class="page">
-		<header>
-		 <div class="header-left">
-		   <img id="logo1" src="./Static/img/vit.png" alt="vit-logo">
-			 <img id="logo3" src="./Static/img/sdg.png" alt="sdg-logo">
-		 </div>
-	 
-		 <div class="header-center">
-		   <img id="logo2" src="./Static/img/Technoscape black_ black 23_blue_20 logo.png" alt="logo">
-		 </div>
-		   <div class="header-right">
-	 
-		   
-			 <nav role='navigation'>
-				 <label id="menuToggle">
-					 <input type="checkbox" />
-					 <span></span>
-					 <span></span>
-					 <span></span>
-					 <ul id="menu">
-						 <a href="/home.html"><li>Home</li></a>
-						 <a href ="/about.html"><li>About</li></a>
-						 <a href ="/conference.html"><li>Conference</li></a>
-						 <a href ="/committee.html"><li>Committee</li></a>
-						 <a href ="#"><li>Advisory Committee</li></a>
-						 <a href ="/partners.html"><li>Partners</li></a>
-						 <a href ="/location.html"><li>Location</li></a>
-						 <a href ="#contact-us"><li>Contact Us</li></a>
-						 <a href ="/registration.html"><li>Register</li></a>
-					 </ul>
-				 </label>
-			 </nav>
-		 </header>
-		 </div>
-	<div class="container">
+	<div class="container-map">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.040998230335!2d79.15373955030543!3d12.969228418394739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1679684688887!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	  </div>
 
+	  
+
 	 <div class="wrapper">
+		<div class="visit-flex">
 		<div class="tabs">
 			<ul>
 				<li class="active">
@@ -64,8 +70,8 @@
 				</li>
 			</ul>
 		</div>
-	
-		<div class="content-location">
+		
+		<div class="content-map">
 			<div class="tab_wrap" style="display: block;">
 				<div class="tab_content">
 					<p>The VIT campus is located on a 370-acre site on the Ranipet – Katpadi Road. It is close to two prominent metropolitan cities, Chennai and Bengaluru. Both cities are well connected by road, rail, and air to all parts of the country. The cities have prominent international airports, the nearest being in Chennai (166 kms), followed by Bengaluru (209 kms).</p>
@@ -133,7 +139,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="./Static/js/location.js"></script>
+</div>
+	<script src="./Static/css/location.css"></script>
 
 
 	<footer>
@@ -142,22 +149,22 @@
 		  <div class="left-content">
 			<img src="./Static/img/logo1.png" alt="">
 			<div class="details" style="padding-top: 8%;">
-			  <img src="./Static/img/house.png" alt="">
-			  <div class="address">
+			  <img src="./Static/img/house.png" alt="" style="width: 6%; margin-left: 4.5%;">
+			  <div class="address" style="padding-left: 5%; padding-top: 2%;">
 				<p>VIT Vellore, Tamil Nadu,
 				  India.-632014</p>
 			  </div>
 			</div>
 	
 			<div class="details">
-			  <img src="./Static/img/email.png" alt="" style="width: 9%; margin-left: 4.5%;">
+			  <img src="./Static/img/email.png" alt="" style="width: 6%; margin-left: 4.5%;">
 			  <div class="address" style="padding-left: 5%; padding-top: 2%;">
 				<p>info@technoscape.in</p>
 			  </div>
 			</div>
 	
-			<div class="details" style="margin-top: -3%;">
-			  <img src="./Static/img/phone.png" alt="" style="width: 9%; margin-left: 4.5%;">
+			<div class="details" >
+			  <img src="./Static/img/phone.png" alt="" style="width: 6%; margin-left: 4.5%;">
 			  <div class="address" style="padding-left: 5%; padding-top: 2%;">
 				<p>+91 9876543210</p>
 			  </div>
@@ -218,3 +225,4 @@
 	
 </body>
 </html>
+

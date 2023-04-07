@@ -27,7 +27,7 @@ section + section {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.125;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 }
@@ -67,7 +67,7 @@ summary small {
   font-size: 0.875em;
 }
 summary strong {
-  font-weight: 700;
+  font-weight: 400;
 }
 summary span:first-child {
   width: 4rem;
@@ -122,10 +122,31 @@ dl div {
 }
 
 
-#button-abs
+.button-abs
 {
-  height: 10%;
+  text-align: center;
+  margin-top: 5%;
 }
+
+.button-abs a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-weight: 800;
+  background-color: #525252;
+  font-size: 24px;
+  border: none;
+  padding: 14px 70px;
+  margin-top: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.button-abs a:hover{
+  color:white;
+}
+
+
 
 /*# sourceMappingURL=conference.css.map */
 
