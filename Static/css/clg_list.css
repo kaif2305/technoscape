@@ -4,26 +4,91 @@
 body
 {
     margin: 0;
+    font-family: "Montserrat";
 }
 
 .flex_container0{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-top: 5%;
+    display: block;
     justify-content: center;
-    align-items: center;
-    align-content: center;
     position: relative;
-    height: 100%;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: -4%;
-    margin-top: -4%;
+    height: 90vh;
+    
+    background-color: black;
+    width: 100%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    margin-bottom: 4%;
 }
+
+.flex_container0 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    
+}
+.overlay
+{
+    position: absolute;
+	width: 100%;
+	height: 100%;
+    z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to bottom, rgb(0 0 0 / 70%), rgb(0 0 0 / 20%));
+}
+
+.flex_container0 h1
+{
+    position: absolute;
+    top: 0;
+    text-shadow: 1px 5px 5px rgba(0,0,0,1);  
+    margin-top: 5%;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.flex_container0 p{
+    position: absolute;
+    text-shadow: 1px 5px 5px rgba(0,0,0,1);
+
+    z-index: 2;
+    top: 0;
+    margin-top: 10%;
+    color: white;
+    width: 80%;
+    margin-left:10%;
+    margin-right: 10%;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+
 
   
 .flex_container1
+{
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.flex_container2
 {
     width: 80%;
     height: 70%;
@@ -35,13 +100,16 @@ body
     position: relative;
     align-items: center;
     margin-bottom: 5%;
+    justify-content: end;
+
 }
 
 .left_container
 {
     /* padding-top: 3.5%; */
     width: 50%;
-    left: 0;
+    height: 100%;
+    position: relative;
 }
 
 .left_container .clg_name
@@ -57,14 +125,14 @@ body
     margin: 0;
     font-family: 'montserrat';
     font-weight: 400;
-    font-size: 1.3cqw;
+    font-size: 25px;
 }
 
 .left_container p
 {
     width: 90%;
     text-align: justify;
-    font-size: 1cqw;
+    font-size: 17px;
     line-height: 200%;
     font-family: "montserrat";
 }
@@ -72,32 +140,34 @@ body
 .right_container
 {
     width: 50%;
-    height: 100%;
+    height: 100% ;
+    position: absolute;
     right: 0;
-    object-fit: cover;
+    
 }
 
 .right_container img
 {
     width: 100%;
-    height: 100%;
+    height: 100% !important;
+    object-fit: cover;
 }
-
-
-
 
 .left_container2
 {
     width: 50%;
     height: 100%;
-    right: 0;
-    object-fit: cover;
+    left: 0;
+    position: absolute;
+    
+    
   
 }
 .left_container2 img
 {
     width: 100%;
     height: 100%;
+    object-fit: cover;
    
 }
 
@@ -105,7 +175,9 @@ body
 {
     /* padding-top: 3.5%; */
     width: 50%;
-    left: 0;
+    height: 100%;
+    position: relative;
+    right: 0;
 }
 
 .right_container2 .clg_name
@@ -122,7 +194,7 @@ body
     margin: 0;
     font-family: 'montserrat';
     font-weight: 400;
-    font-size: 1.3cqw;
+    font-size: 25px;
 }
 
 .right_container2 p
@@ -130,7 +202,7 @@ body
     width: 90%;
     margin-left: 10%;
     text-align: justify;
-    font-size: 1cqw;
+    font-size: 17px;
     line-height: 200%;
     font-family: "montserrat";
 }
@@ -140,63 +212,359 @@ body
 
 .flex_container3
 {
-    width: 100%;
-    height: 70%;
-    /* margin-right: 10%;
-    margin-left: 10%; */
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    align-items: center;
-}
-.card-overlay {
-    position: absolute;
-    padding: top 3%;;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-.left_container3
-{
-
-    width: 100%;
+    display: block;
+    justify-content: center;
+    position: relative;
+    height: 80vh;
     
+    background-color: black;
+    width: 100%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    /* margin-bottom: 4%; */
 }
 
-.left_container3 img
+.flex_container3 img
 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
 }
 
-.left_container3 .card-header h4
+
+.flex_container3 h4
 {
-    padding: 0;
-    margin: 2%;
-    padding-top: 4%;
-    font-family: 'montserrat';
-    color: aliceblue;
+    position: absolute;
+    top: 0;
+    text-shadow: 1px 5px 5px rgba(0,0,0,0.04);  
+    margin-top: 5%;
+    color: white;
+    z-index: 2 ;
+    width: 100%;
     text-align: center;
-    font-weight: 500;
-    font-size: 2cqw;
+    font-weight: 400;
+    font-size: 35px;
 }
 
-.left_container3 
-ul{
+
+
+.flex_container3 ul{
     width: 80%;
-    padding: 0;
-    margin-top: 5%;
+    /* margin-top: 5%; */
+    position: absolute;
     margin-left: 10%;
-    list-style: none;
-    text-align: left;
-    align-items: center;
+    z-index: 2;
+    top: 0;
+    margin-top: 10%;
+    /* text-align: left; */
+    /* align-items: center; */
     font-family: 'montserrat';
     color: aliceblue;
     font-weight: 400;
-    font-size: 1.2cqw;
+    font-size: 20px;
+    text-shadow: 1px 5px 5px rgba(0,0,0,0.04);
 }
 
+
+@media screen and (max-width:1400px) {
+    .flex_container0{
+        margin-top: 8%;
+    }
+
+    .flex_container0 p
+    {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        margin-top: 12%;
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.2;
+    }
+
+.flex_container1
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.flex_container2
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.left_container .clg_name h1
+{
+    font-size: 20px;
+}
+
+.right_container2 .clg_name h2
+{
+    font-size: 20px;
+}
+
+.right_container2 p
+{
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.flex_container3 h4
+{
+    font-size: 25px;
+}
+
+.flex_container3 ul
+{
+    font-size: 17px;
+    margin-top:13%;
+    margin-left: 8%;
+    width: 80%;
+}
+
+.left_container p
+{
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+/* .right_container2 p
+{
+    font-size: 17px;
+    line-height: 1.2;
+} */
+    
+}
+
+
+@media screen and (max-width:550px) {
+    .flex_container0{
+        margin-top: 35%;
+    }
+
+    .flex_container0 p
+    {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        margin-top: 16%;
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.2;
+    }
+
+    .flex_container3 h4
+{
+    font-size: 25px;
+}
+
+.flex_container3 ul
+{
+    font-size: 17px;
+    margin-top:18%;
+    margin-left: 0;
+    width: 90%;
+}
+
+    
+    .flex_container1
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.flex_container2
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.left_container 
+{
+    width: 100%;
+    position: relative;
+}
+.right_container
+{
+    width: 100%;
+    position: relative;
+}
+
+.right_container2
+{
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+}
+.left_container2
+{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+
+.left_container p
+{
+    width: 100%;
+}
+
+
+
+.right_container2 p
+{
+    width: 100%;
+    margin-left: 0;
+}
+
+.right_container2 .clg_name
+{
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+}
+.right_container2 .clg_name h2
+{
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+}
+}
+
+@media screen and (max-width:410px) {
+    .flex_container0{
+        margin-top:30%;
+    }
+
+    .flex_container0 h1
+    {
+        font-size: 22px;
+    }
+    
+    .flex_container0 p
+    {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        margin-top: 16%;
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 1.2;
+    }
+
+    .flex_container3 h4
+{
+    font-size: 20px;
+}
+
+.flex_container3 ul
+{
+    font-size: 15px;
+    margin-top:18%;
+    margin-left: 0;
+    width: 90%;
+    padding-left: 8%;
+}
+
+    
+    .flex_container1
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.flex_container2
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.left_container 
+{
+    width: 100%;
+    position: relative;
+}
+.right_container
+{
+    width: 100%;
+    position: relative;
+}
+
+.right_container2
+{
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+}
+.left_container2
+{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+
+.left_container p
+{
+    width: 100%;
+    font-size: 16px;
+}
+
+
+
+.right_container2 p
+{
+    width: 100%;
+    margin-left: 0;
+    font-size: 16px;
+}
+.left_container .clg_name
+{
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.right_container2 .clg_name
+{
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.left_container .clg_name h1
+{
+    font-size: 18px;
+}
+
+
+
+.right_container2 .clg_name h2
+{
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 18px;
+    width: 100%;
+}
+
+
+}
