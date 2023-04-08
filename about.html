@@ -1,112 +1,84 @@
-<html x-data="{colorMode: localStorage.getItem('colorMode') || localStorage.setItem('colorMode', 'light')}"
-    x-init="$watch('colorMode', val => localStorage.setItem('colorMode', val))"
-    x-bind:class="{'dark': colorMode === 'dark' || (colorMode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
-    class="scroll-smooth h-full overflow-y-auto">
-
-    
-
-<head>
-    <meta charset="UTF-8">
+<html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The Play CDN is designed for development purposes only, and is not the best choice for production. -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
-    <link id="heading-font" rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap"
-        media="all" />
-    <style>
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "DM Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-    </style>
-    <script>
-        window.tailwind.config = {
-            "darkMode": "class",
-            "theme": {
-                "fontFamily": {
-                    "heading": ["DM Sans", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "Roboto", "\"Helvetica Neue\"", "Arial", "\"Noto Sans\"", "sans-serif", "\"Apple Color Emoji\"", "\"Segoe UI Emoji\"", "\"Segoe UI Symbol\"", "\"Noto Color Emoji\""],
-                    "body": ["DM Sans", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "Roboto", "\"Helvetica Neue\"", "Arial", "\"Noto Sans\"", "sans-serif", "\"Apple Color Emoji\"", "\"Segoe UI Emoji\"", "\"Segoe UI Symbol\"", "\"Noto Color Emoji\""]
-                },
-                "extend": {
-                    "borderRadius": {
-                        "global": "5px"
-                    },
-                    "colors": {
-                        "primary": {
-                            "50": "#f8f5ff",
-                            "100": "#eee6fe",
-                            "200": "#ddcefd",
-                            "300": "#c1a6fc",
-                            "400": "#844df9",
-                            "500": "#4d07e4",
-                            "600": "#3705a3",
-                            "700": "#280477",
-                            "800": "#170245",
-                            "900": "#0c0123",
-                            "950": "#070114",
-                            "DEFAULT": "#570df8"
-                        },
-                        "secondary": {
-                            "50": "#fff5fd",
-                            "100": "#ffe6f9",
-                            "200": "#fecdf3",
-                            "300": "#fea4e9",
-                            "400": "#fd49d3",
-                            "500": "#e802b3",
-                            "600": "#a70280",
-                            "700": "#79015d",
-                            "800": "#470136",
-                            "900": "#23001b",
-                            "950": "#140010",
-                            "DEFAULT": "#f002b8"
-                        }
-                    }
-                }
-            },
-            "plugins": [window.tailwind.plugin.withOptions(({
-                prefix = "ui"
-            } = {}) => {
-                return ({
-                    addVariant
-                }) => {
-                    for (let state of ["open", "checked", "selected", "active", "disabled"]) {
-                        addVariant(`${prefix}-${state}`, [
-                            `&[data-headlessui-state~="${state}"]`,
-                            `:where([data-headlessui-state~="${state}"]) &`,
-                        ]);
 
-                        addVariant(`${prefix}-not-${state}`, [
-                            `&[data-headlessui-state]:not([data-headlessui-state~="${state}"])`,
-                            `:where([data-headlessui-state]:not([data-headlessui-state~="${state}"])) &:not([data-headlessui-state])`,
-                        ]);
-                    }
-                };
-            }),]
-        };
-    </script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <head>
     <title>About</title>
-    <link rel="stylesheet" href="clg_list.css">
-    <link rel="stylesheet" href="about_technoscape_style.css">
+    <link rel="stylesheet" href="./Static/css/clg_list.css">
+    <link rel="stylesheet" href="./Static/css/about_technoscape_style.css">
 </head>
 
 
-<body x-data="{'openDialogId': ''}" x-on:keydown.escape="openDialogId=''"
-    class='font-body antialiased h-full font-body antialiased text-[#000000] bg-[#fcfcfc] dark:text-[#ffffff] dark:bg-[#031022]'>
-    <!---
-    <div class="flex_container5">
-        <div class="left_container4">
-            <img src="markus-spiske-sFydXGrt5OA-unsplash 1.png" alt="markus">
+<body>
+
+
+
+<div class="flex_container0">
+
+
+  <div class="C-track">
+    <div class="overlay">
+        <h1>TECHNOSCAPE</h1>
+        <p> Water, the most vital natural resource, has touched every aspect of human life. Various anthropogenic activities are 
+            threatening its very existence. If the judicious utilisation of remaining supplies is to be ensured, it is our 
+            responsibility as human beings to search for viable conservation techniques. The international community has enthusiastically
+            embraced the Sustainable Development Goals (SDG). In particular, SDG 6 has become the guiding light for efforts to
+            meet the rising water demand and avert a worldwide water crisis. In tune with the United Nations' goal to 'Ensure availability
+            and sustainable management of water and sanitation for all' by 2030, we at Vellore Institute of Technology-Vellore, INDIA, 
+            propose to host TECHNOSCAPE23, an international conference on Sustainable Technologies for Water and Wastewater Treatment, 
+            from 14th to 16th December 2023. TECHNOSCAPE23 aims to provide a platform for water enthusiasts and environmental experts 
+            to share their rich scientific experiences.</p>
+    </div>
+    <ul class="C-carousel">
+        <li class="C-slide">
+            <img src="./Static/img/about-page-mess/Group 141.png" alt="">
+        </li>
+        <li class="C-slide">
+            <img src="./Static/img/about-page-mess/Group 142.png" alt="">
+        </li>
+        <li class="C-slide">
+            <img src="./Static/img/about-page-mess/Group 143.png" alt="">
+        </li>
+    </ul>
+</div>
+  
+
+  <script src="./Static/js/about_technoscape_script.js"></script>
+</div>
+
+
+
+
+    <div class="flex_container1">
+        <div class="left_container">
+            <div class="clg_name">
+                <h1>Vellore Institute of Technology,</h1>
+                <h1>INDIA</h1>
+            </div>
+
+            <p>Vellore Institute of Technology was established in 1984 as Vellore Engineering College by the Chancellor,
+                Dr G. Viswanathan. It was conferred the university status in 2001 to recognize its excellence in
+                academics, research and extra-curricular initiatives. VIT has been consistently ranked among the best
+                institutions inthe country, and is aspiring to emerge as a global leader. VIT is recognised as an
+                Institution of Eminence (IoE) by the Government of India. The Engineering and Technology subject areas
+                of VIT are ranked 346 in the world and 9 in India as per the QS World University Rankings by Subject
+                2022.</p>
+
+        </div>
+        <div class="right_container">
+            <img src="./Static/img/about-page-mess/vit-1.jpg" alt="VIT">
+        </div>
+
+    </div>
+
+
+    <div class="flex_container1">
+        <div class="left_container2">
+            <img src="./Static/img/about-page-mess/ynu.jpg" alt="YNU">
         </div>
 
 
-        <div class="right_container4">
+        <div class="right_container2">
             <div class="clg_name">
                 <h2>Yokohama National University,</h2>
                 <h2>JAPAN</h2>
@@ -121,157 +93,64 @@
 
         </div>
     </div>
--->
 
 
-    <div class="flex_container0">
-
-
-        <div class="C-track">
-            <div class="overlay">
-
-                <script>fitText(document.querySelector("h1"), 0.38);</script>
-                <h1>TECHNOSCAPE</h1>
-                <p> Water, the most vital natural resource, has touched every aspect of human life. Various
-                    anthropogenic activities are
-                    threatening its very existence. If the judicious utilisation of remaining supplies is to be ensured,
-                    it is our
-                    responsibility as human beings to search for viable conservation techniques. The international
-                    community has enthusiastically
-                    embraced the Sustainable Development Goals (SDG). In particular, SDG 6 has become the guiding light
-                    for efforts to
-                    meet the rising water demand and avert a worldwide water crisis. In tune with the United Nations'
-                    goal to 'Ensure availability
-                    and sustainable management of water and sanitation for all' by 2030, we at Vellore Institute of
-                    Technology-Vellore, INDIA,
-                    propose to host TECHNOSCAPE23, an international conference on Sustainable Technologies for Water and
-                    Wastewater Treatment,
-                    from 14th to 16th December 2023. TECHNOSCAPE23 aims to provide a platform for water enthusiasts and
-                    environmental experts
-                    to share their rich scientific experiences.</p>
+    <div class="flex_container1">
+        <div class="left_container">
+            <div class="clg_name">
+                <h1>Gdańsk University of Technology,</h1>
+                <h1>POLAND</h1>
             </div>
-            <ul class="C-carousel">
-                <li class="C-slide">
-                    <img src="Group 141.png" alt="">
-                </li>
-                <li class="C-slide">
-                    <img src="Group 142.png" alt="">
-                </li>
-                <li class="C-slide">
-                    <img src="Group 143.png" alt="">
-                </li>
-            </ul>
+
+            <p>Established in 1970, Gdańsk University of Technology is an amalgamation of three educational institutions: 
+               the Higher Economics School in Sopot, the Higher Pedagogical School and the Higher Teacher Training School 
+               in Gdańsk. GUT's inclusion in global rankings, such as the QS World University Rankings and the Times Higher 
+               Education (THE) World University Rankings, attests to its high quality of education, rising international stature 
+               in scientifically published research, and an ever-growing calibre to innovate for a sustainable future. According 
+               to the 2019 CWTS Leiden Ranking, GUT is ranked fourth globally in terms of the participation of women in scientific 
+               publications at universities. </p>
+
         </div>
-
-
-        <script src="about_technoscape_script.js"></script>
-    </div>
-
-    <div class="grid grid-cols-2 mt-5 gap-y-5 sm:gap-y-0 lg:mx-auto lg:max-w-6xl">
-        <div class="col-span-2 gap-y-5 sm:col-span-1"><img class="w-full bg-gray-50" alt="No alt"
-                src="vit-1.jpg" /></div>
-        <div
-            class="col-span-2 px-3 gap-y-2 pb-3 dark:border-slate-700 border-gray-50 sm:col-span-1 sm:flex sm:flex-col sm:justify-center sm:pl-7 sm:border-t lg:border-r">
-            <h1
-                class="font-semibold text-gray-700 tracking-tight text-xl dark:text-gray-200 dark:divide-undefined sm:mb-2 md:my-1">
-                Vellore Institute of Technology,<br>INDIA</h1>
-            <p class="text-base font-normal tracking-tight leading-relaxed dark:divide-undefined dark:text-gray-300">
-                Vellore Institute of Technology was established in 1984 as Vellore Engineering College by the
-                Chancellor,
-                Dr G. Viswanathan. It was conferred the university status in 2001 to recognize its excellence in
-                academics, research and extra-curricular initiatives. VIT has been consistently ranked among the best
-                institutions inthe country, and is aspiring to emerge as a global leader. VIT is recognised as an
-                Institution of Eminence (IoE) by the Government of India. The Engineering and Technology subject areas
-                of VIT are ranked 346 in the world and 9 in India as per the QS World University Rankings by Subject
-                2022.</p>
-        </div>
-        <div
-            class="col-span-2 px-3 pb-3 order-3 dark:border-slate-700 border-gray-50 sm:col-span-1 sm:flex sm:flex-col sm:justify-center sm:pl-7 sm:order-none sm:border-b lg:border-l">
-            <h1
-                class="font-semibold text-gray-700 tracking-tight text-xl dark:text-gray-200 dark:divide-undefined sm:mb-2 md:my-1">
-                Yokohama National University,<br>JAPAN</h1>
-            <p class="text-base font-normal tracking-tight leading-relaxed dark:divide-undefined dark:text-gray-300">
-                Founded in 1874, Yokohama National University has emerged as a leading international educational hub.
-                The institution fosters practical learning based on Yokohama's deep-rooted history and tradition as a
-                thriving city of commerce, industry and trade. The flexibility and adaptability of YNU’s vibrant campus
-                enable the cultivation of globally competitive talents. YNU was bestowed with the prestigious
-                Nihon-Ryugaku
-                Awards, in the categories of Graduate Schools of the Eastern Japan division (2018 and 2020) and National
-                &
-                Public Universities of the Eastern Japan division (2017 - 2021). According to the QS World University
-                Rankings 2022, YNU has been ranked 801-1000 globally and 169 in Asia.</p>
-        </div>
-        <div class="col-span-2 order-2 sm:col-span-1 sm:order-none"><img class="w-ful h-fulll bg-gray-50" alt="No alt"
-                src="ynu.jpg" /></div>
-
-        <div class="col-span-2 sm:col-span-1"><img class="w-ful h-fulll bg-gray-50" alt="No alt"
-                src="gut.jpg" style="object-fit: cover;"></div>
-
-        <div
-            class="col-span-2 px-3 pb-3 dark:border-slate-700 border-gray-50 sm:col-span-1 sm:flex sm:flex-col sm:justify-center sm:pl-7 sm:border-t lg:border-r">
-            <h1
-                class="font-semibold text-gray-700 tracking-tight text-xl dark:text-gray-200 dark:divide-undefined sm:mb-2 md:my-1">
-                Gdańsk University of Technology,<br>POLAND</h1>
-            <p class="text-base font-normal tracking-tight leading-relaxed dark:divide-undefined dark:text-gray-300">
-                Established in 1970, Gdańsk University of Technology is an amalgamation of three educational
-                institutions:
-                the Higher Economics School in Sopot, the Higher Pedagogical School and the Higher Teacher Training
-                School
-                in Gdańsk. GUT's inclusion in global rankings, such as the QS World University Rankings and the Times
-                Higher
-                Education (THE) World University Rankings, attests to its high quality of education, rising
-                international stature
-                in scientifically published research, and an ever-growing calibre to innovate for a sustainable future.
-                According
-                to the 2019 CWTS Leiden Ranking, GUT is ranked fourth globally in terms of the participation of women in
-                scientific
-                publications at universities. </p>
+        <div class="right_container">
+            <img src="./Static/img/about-page-mess/gut.jpg" alt="GUT">
         </div>
 
     </div>
-    </div>
 
-
-
-
-
-    <div class="flex_container3" style="margin-top: 5%;">
+    <div class="flex_container3">
         <div class="left_container3">
-            <img src="conference 1.png" alt="conference">
-            <div class="card-overlay">
-                <div class="card-header">
+        <img src="./Static/img/about-page-mess/conference 1.png" alt="conference">
+        <div class="card-overlay">
+            <div class="card-header">
+    
+                <h4>GOALS OF CONFERENCE</h4>
+            </div>
+            <div class="card-body">
 
-                    <h4>GOALS OF CONFERENCE</h4>
-                </div>
-                <div class="card-body">
-
-                    <p>
+                <p>
                     <ul>
-                        <li>Bring together water professionals to address the existing state of water resources,
-                            contribute
-                            plausible ideas and inculcate better water management practices to meet the colossal demand.
-                        </li>
+                        <li>Bring together water professionals to address the existing state of water resources, contribute 
+                            plausible ideas and inculcate better water management practices to meet the colossal demand.</li>
                         <br>
                         <br>
 
-                        <li>Offer a platform to share prodigious knowledge about advanced and sustainable technologies
+                        <li>Offer a platform to share prodigious knowledge about advanced and sustainable technologies 
                             for water and wastewater treatment.</li>
-                        <br>
-                        <br>
+                            <br>
+                            <br>
 
-                        <li>Provide a holistic view on the latest water research and insights on some of the modern
+                        <li>Provide a holistic view on the latest water research and insights on some of the modern 
                             technologies such as IoT, Remote Sensing and Geographic Information System (GIS).</li>
-                        <br>
-                        <br>
-                        <li>Focus on trans disciplinary research to facilitate a systematic approach towards challenges.
-                        </li>
+                            <br>
+                            <br>
+                        <li>Focus on trans disciplinary research to facilitate a systematic approach towards challenges.</li>
 
-                    </ul>
-                    </p>
-                </div>
+                      </ul>
+                </p>
             </div>
         </div>
-
+    </div>
+       
 </body>
 
 </html>
