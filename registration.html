@@ -7,6 +7,7 @@
     <title>Registration Page</title>
     <link rel="stylesheet" href="./Static/css/reg_new_style.css" />
     <link rel="stylesheet" href="./Static/css/nav.css" />
+    <link rel="stylesheet" href="./Static/css/footer.css">
   </head>
 
   <body>
@@ -34,10 +35,12 @@
                        <a href="/home.html"><li>Home</li></a>
                        <a href ="/about.html"><li>About</li></a>
                        <a href ="/conference.html"><li>Conference</li></a>
+                       <a href ="/committee.html"><li>Committee</li></a>
+						 <a href ="#"><li>Advisory Committee</li></a>
                        <a href ="/partners.html"><li>Partners</li></a>
                        <a href ="/location.html"><li>Location</li></a>
                        <a href ="#contact-us"><li>Contact Us</li></a>
-                       <a href ="/registration.html"><li>Register</li></a>
+                       <a href ="/registration.html"><li>Abstraction Submission</li></a>
                    </ul>
                </label>
            </nav>
@@ -67,15 +70,15 @@
         <a href="#">Resend Email</a>
       </button>
     </div> -->
-
+    <div class="most-outer">
     <div class="register-details">
-      <div class="register-fee">
+      <!-- <div class="register-fee">
         <img src="./Static/img/regfee.png" alt="" />
         <h1>Registration fee is inclusive of 18% GST</h1>
-      </div>
+      </div> -->
 
       <section class="container">
-        <header>Registration Form</header>
+        <h4 style="font-size: 20px; font-weight: 400;">Abstract Submition</h4>
         <form
           action="https://technoscape-abstract-backend.onrender.com/users"
           method="POST"
@@ -516,5 +519,86 @@
         </form>
       </section>
     </div>
+  </div>
+
+
+    <footer>
+      <div class="content">
+  
+        <div class="left-content">
+          <img src="./Static/img/logo1.png" alt="">
+          <div class="details" style="padding-top: 8%;">
+            <img src="./Static/img/house.png" alt="">
+            <div class="address">
+              <p>VIT Vellore, Tamil Nadu,
+                India.-632014</p>
+            </div>
+          </div>
+  
+          <div class="details">
+            <img src="./Static/img/email.png" alt="" style="width: 9%; margin-left: 4.5%;">
+            <div class="address" style="padding-left: 5%; padding-top: 2%;">
+              <p>info@technoscape.in</p>
+            </div>
+          </div>
+  
+          <div class="details" style="margin-top: -3%;">
+            <img src="./Static/img/phone.png" alt="" style="width: 9%; margin-left: 4.5%;">
+            <div class="address" style="padding-left: 5%; padding-top: 2%;">
+              <p>+91 9876543210</p>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="container2">
+          <div class="nav">
+            <a href="/home.html">Home</a>
+          </div>
+          <div class="nav">
+            <a href="#">About</a>
+          </div>
+          <div class="nav">
+            <a href="#">Conference</a>
+          </div>
+          <div class="nav">
+            <a href="#">Committees</a>
+          </div>
+          <div class="nav">
+            <a href="#">Partners</a>
+          </div>
+          
+        </div>
+  
+        <div class="container2">
+          <div class="nav">
+            <a href="#">Location</a>
+          </div>
+          <div class="nav">
+            <a href="#">Registration</a>
+          </div>
+        </div>
+  
+        <div class="calc-container" id="contact-us">
+          <h1>Contact</h1>
+          <h2>Ask us anything</h2>
+          <div class="calc-details">
+            <div class="detail-cont">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email">
+          </div>
+          <input type="text" placeholder="Leave us a message...">
+          </div>
+  
+          <button>Submit</button>
+        </div>
+  
+      </div>
+      <div class="bottom-details">
+          <h1>Technoscape'23</h1>
+  
+          <button>FAQ</button>
+      </div>
+    </footer>
   </body>
 </html>
