@@ -179,7 +179,7 @@
         <button id="submit-query">Submit</button>
         <script>
           document.getElementById("submit-query").addEventListener("click",async function(){
-            const sendQuery =  fetch("http://localhost:8081/contact-us", {
+            const sendQuery =  fetch("https://technoscape-abstract-backend.onrender.com/contact-us", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json"
