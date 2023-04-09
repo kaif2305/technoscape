@@ -17,7 +17,7 @@ body {
   position: relative;
   width: 100%;
   justify-content: center;
-  background-image: url("../img/water-background.jpg");
+  background-image: url("../img/leaf.jpg");
 }
 
 .register-details {
@@ -128,7 +128,7 @@ body {
   column-gap: 5px;
 }
 .gender input {
-  accent-color: rgb(130, 106, 251);
+  accent-color: #0C6E98;
 }
 .form :where(.gender input, .gender label) {
   cursor: pointer;
@@ -136,6 +136,37 @@ body {
 .gender label {
   color: #707070;
 }
+
+.form .title-box {
+  margin-top: 20px;
+}
+.title-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.title-option, .title) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .title {
+  column-gap: 5px;
+}
+.title input {
+  accent-color: #0C6E98;
+}
+.form :where(.title input, .title label) {
+  cursor: pointer;
+}
+.title label {
+  color: #707070;
+}
+
+
 .address :where(input, .select-box) {
   margin-top: 15px;
 }
@@ -157,10 +188,10 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: rgb(130, 106, 251);
+  background: #0C6E98;
 }
 .form button:hover {
-  background: rgb(88, 56, 250);
+  background: #0C6E98;
 }
 /*Responsive*/
 @media screen and (max-width: 500px) {

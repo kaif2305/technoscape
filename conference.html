@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conference    </title>
     <meta name="description" content="Technoscape a conference on chemical engineering conducted by Vellore Institute of Technology" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Static/css/conference.css">
     <link rel="stylesheet" href="./Static/css/nav.css">
     <link rel="stylesheet" href="./Static/css/footer.css">
@@ -15,448 +17,317 @@
 
 <body>
 
-    <div class="page" >
-        <header>
-         <div class="header-left">
-           <img id="logo1" src="./Static/img/vit.png" alt="vit-logo">
-             <img id="logo3" src="./Static/img/sdg.png" alt="sdg-logo">
-         </div>
-     
-         <div class="header-center">
-           <img id="logo2" src="./Static/img/Technoscape black_ black 23_blue_20 logo.png" alt="logo">
-         </div>
-           <div class="header-right">
-     
-           
-             <nav role='navigation'>
-                 <label id="menuToggle">
-                     <input type="checkbox" />
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                     <ul id="menu">
-                         <a href="/home.html"><li>Home</li></a>
-                         <a href ="/about.html"><li>About</li></a>
-                         <a href ="/conference.html"><li>Conference</li></a>
-                         <a href ="/committee.html"><li>Committee</li></a>
-						 <a href ="#"><li>Advisory Committee</li></a>
-                         <a href ="/partners.html"><li>Partners</li></a>
-                         <a href ="/location.html"><li>Location</li></a>
-                         <a href ="#contact-us"><li>Contact Us</li></a>
-                         <a href ="/registration.html"><li>Abstraction Submission</li></a>
-                     </ul>
-                 </label>
-             </nav>
-         </header>
-         </div>
+  <div class="page">
+    <header>
+     <div class="header-left">
+       <img id="logo1" src="./Static/img/vit.png" alt="vit-logo">
+         <img id="logo3" src="./Static/img/sdg.png" alt="sdg-logo">
+     </div>
+ 
+     <div class="header-center">
+       <img id="logo2" src="./Static/img/Technoscape black_ black 23_blue_20 logo.png" alt="logo">
+     </div>
+     <div class="header-right">
+       <nav role='navigation'>
+         <label id="menuToggle">
+             <input type="checkbox" />
+             <span></span>
+             <span></span>
+             <span></span>
+             <ul id="menu">
+                 <a href="/home.html"><li>Home</li></a>
+                 <a href ="/about.html"><li>About</li></a>
+                 <a href ="/conference.html"><li>Themes</li></a>
+                 <a href ="/committee.html"><li>Committee</li></a>
+              <a href ="#"><li>Advisory Committee</li></a>
+              <a href ="/registration.html"><li>Abstract Submission</li></a>
+                 <a href ="/partners.html"><li>Partners</li></a>
+                 <!-- <a href ="/location.html"><li>Location</li></a> -->
+                 <a href ="#contact-us"><li>Contact Us</li></a>
+                
+             </ul>
+           </label>
+         </nav>
+     </header>
+     </div>
+
 
     <section class="conf-theam">
         <h1>Themes</h1>
         <!-- <h2>Today</h2> -->
-        <details>
-            <summary>
-                <div>
-                    <span style="background-color: #f2dcbb;">
-                        1
-                    </span>
-                    <h3>
-                        <strong>Carbon footprint water</strong>
-
-                    </h3>
-
-                </div>
-            </summary>
-            <div>
-                <h4>Water footprint assessment, carbon-water-energy nexus, net zero carbon, Embodied carbon of water
-                    usage, carbon emission mitigation</h4>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   <strong> Advancements in Membrane Technologies (TS-AMT) </strong>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                     Bio polyester Membrane; Anti-fouling Membranes; Membrane-based Water Quality Monitoring                </div>
+              </div>
             </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        2
-                    </span>
-                    <h3>
-                        <strong>Circular economy</strong>
-                    </h3>
-                </div>
-            </summary>
-            <div>
-                <h4>water sustainability, subcritical water extraction, Life Cycle Assessment of circular economy,
-                    Circular economic valuation</h4>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Carbon Footprint Reduction- (TS-CFP)</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Water Footprint Assessment; Net Zero Carbon; Embodied Carbon of Water Usage                </div>
+              </div>
             </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span style="background-color: #e0ece4;">
-                        3
-                    </span>
-                    <h3>
-                        <strong>Emerging contaminants in water and waste water</strong>
-
-                    </h3>
-                </div>
-            </summary>
-            <div>
-                <h4>Principal component analysis, Advanced oxidation processes, Nanoremediation, metal phytotoxicity,
-                    bioaccumulation of heavy metals </h4>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Circular Economy (TS-CEC)</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Water Sustainability; Closed Loop; Life Cycle Assessment                </div>
+              </div>
             </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        4
-                    </span>
-                    <h3>
-                        <strong>Green Technologies for Crude oil processing water treatment</strong>
-                    </h3>
+        
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Ecological Sanitation (TS-ESA)</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Faecal Sludge Management; Water Minimization in Closets; Dry Sanitation System                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>biotreatment, liquid-liquid extraction, purification and detoxification, bio flocculant </h4>
-            </div>
-            </details>
-            <details>
-            <summary>
-                <div>
-                    <span style="background-color: #f2dcbb;">
-                        5
-                    </span>
-                    <h3>
-                        <strong>Advancements in membrane technologies</strong>
-
-                    </h3>
-
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <strong>Emerging Contaminants in Water and Wastewater (TS-ECW)</strong>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Nanoremediation; Metal Phytotoxicity; Bioaccumulation of Heavy Metals                   </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Nanofiltration, Bio polyester membrane, Anti-fouling membranes, Membrane-based water quality
-                    monitoring, Ultrafiltration</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        6
-                    </span>
-                    <h3>
-                        <strong>Ecological sanitation</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <strong>GIS and Remote Sensing in Water Monitoring (TS-GIS)</strong>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Water Quality Forecast; Spatial Distribution of Groundwater; Drought Risk Assessment                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Evolution of toilets, management of solid and waste water, grey water management, Excreta
-                    management, Health risk assessment</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span style="background-color: #e0ece4;">
-                        7
-                    </span>
-                    <h3>
-                        <strong>GIS and remote sensing in water monitoring</strong>
-
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <strong>Green Technologies for Crude-oil Processed Water Treatment (TS-GTC)</strong>
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Green Petroleum; Cleaner Production; Bio-Flocculation                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Water quality forecast, Environmental pollution assessment, Spatial distribution of groundwater,
-                    Water erosion evaluation, Drought risk assessment </h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        8
-                    </span>
-                    <h3>
-                        <strong>Smart farming and Hydroponics</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <strong>Hydroponics and Smart Farming (TS-HSF)</strong>
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Smart Greenhouses; Precision Farming; Integrated Farming System                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Nutrient management system, Smart greenhouses, climate smart agriculture, precision farming,
-                    Integrated farming system</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span style="background-color: #f2dcbb;">
-                        9
-                    </span>
-                    <h3>
-                        <strong>Impact of Covid-19 on waste water management</strong>
-
-                    </h3>
-
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    <strong>Impact of Covid-19 on Wastewater Management (TS-ICO)</strong>
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Covid 19 Wastewater Surveillance; Transmission of Pathogens; Biomedical Contamination                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Covid 19 wastewater surveillance, Biomedical Contamination</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        10
-                    </span>
-                    <h3>
-                        <strong>Incorporation of IOT, AI and ML in water technologies</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    <strong>Incorporation of IoT, AI and ML in Water Technologies (TS-IOT)</strong>
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Smart Water Resource Management; Predictive Safety Assessment; Integrated System                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Smart water resource management, smart irrigation system, water level control system, Source
-                    water quality, Predictive safety assessment</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span style="background-color: #e0ece4;">
-                        11
-                    </span>
-                    <h3>
-                        <strong>Landless farming</strong>
-
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    <strong>Landless Farming (TS-LLF)</strong>
+                  </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Organic Farming; Ruminant Production; Sustenance of Dryland Farmers                   </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Vertical farming, cattle farming system, Ruminant production, Sustenance of Dryland farmers </h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        12
-                    </span>
-                    <h3>
-                        <strong>Novel desalination Technologies</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                    <strong>Novel Desalination Technologies (TS-NDT)</strong>
+                  </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Reverse Osmosis; Multi-effect Distillation; Hydrate based Desalination                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Reverse osmosis, capillary-driven desalination, solar desalination, multi-effect distillation (MED),
-                    Hydrate based desalination (HBD) </h4>
-            </div>
-            </details>
-            <details>
-            <summary>
-                <div>
-                    <span style="background-color: #f2dcbb;">
-                        13
-                    </span>
-                    <h3>
-                        <strong>Process Water Treatment Technology</strong>
-
-                    </h3>
-
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                    <strong>Phytoremediation (TS-PHY)</strong>
+                  </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Phytostabilization; Metal Hyperaccumulation Technology; Transgenic Plants                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Advanced water treatment technologies (AWTT), Photocatalysis, Water pinch analysis, Micro &
-                    Nanotubule technology, Catalytic ozonisation</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        14
-                    </span>
-                    <h3>
-                        <strong>Produced water treatment</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                    <strong>Process Water Treatment Technology (TS-PWT)</strong>
+                  </button>
+                </h2>
+                <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                  Photocatalysis; Water Pinch Analysis; Catalytic Ozonisation                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Offshore produced water treatment, algae-based produced water treatment, micellar-enhanced
-                    ultrafiltration, novel settling tank technologies</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span style="background-color: #e0ece4;">
-                        15
-                    </span>
-                    <h3>
-                        <strong>Recovery and remediation of marine oil- spills</strong>
-
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                    <strong>Produce Water Treatment (TS-PDT)</strong>
+                  </button>
+                </h2>
+                <div id="collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Offshore Produced Water Treatment; Bio-based Produced Water Treatment; Micellar-enhanced Ultrafiltration                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Principal component analysis, Advanced oxidation processes, Nanoremediation, metal phytotoxicity,
-                    bioaccumulation of heavy metals </h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        16
-                    </span>
-                    <h3>
-                        <strong>Green Technologies for Crude oil processing water treatment</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                    <strong>Recovery and Remediation of Marine oil-spills (TS-RAR)</strong>
+                  </button>
+                </h2>
+                <div id="collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Bio-dispersant and Bio-remediation Technology; Biosurfactants                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Biotreatment, liquid-liquid extraction, purification and detoxification, bio flocculant </h4>
-            </div>
-            </details>
-            <details>
-            <summary>
-                <div>
-                    <span style="background-color: #f2dcbb;">
-                        17
-                    </span>
-                    <h3>
-                        <strong>Carbon footprint water</strong>
-
-                    </h3>
-
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                    <strong>Resource Recovery-(TS-RRE)</strong>
+                  </button>
+                </h2>
+                <div id="collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Nutrient Removal and Recovery; Waste-to-Value; Resource Utilization                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Water footprint assessment, carbon-water-energy nexus, net zero carbon, Embodied carbon of water
-                    usage, carbon emission mitigation</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        18
-                    </span>
-                    <h3>
-                        <strong>Circular economy</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                    <strong>Socio-Economic issues concerning Wastewater Management(TS-SEI)</strong>
+                  </button>
+                </h2>
+                <div id="collapseEighteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Water Positivity; Valuation of Recycled Water; Sustainable Water Resource Planning                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Water sustainability, subcritical water extraction, Life Cycle Assessment of circular economy,
-                    Circular economic valuation</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span style="background-color: #e0ece4;">
-                        19
-                    </span>
-                    <h3>
-                        <strong>Emerging contaminants in water and waste water</strong>
-
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                    <strong>Suistanable Initiatives to acheive Zero Liquid Discharge (TS-ZLD)</strong>
+                  </button>
+                </h2>
+                <div id="collapseNineteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Circularity; Sustainable Industrial Effluent Treatment; Water Conservation                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Principal component analysis, Advanced oxidation processes, Nanoremediation, metal phytotoxicity,
-                    bioaccumulation of heavy metals </h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        20
-                    </span>
-                    <h3>
-                        <strong>Green Technologies for Crude oil processing water treatment</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                    <strong>Water-Energy-Land-Food Nexus (TS-WEL)</strong>
+                  </button>
+                </h2>
+                <div id="collapseTwenty" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sustainable Agricultural Water Management; Biofuel Assessment; Integrated Watershed Management                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Biotreatment, liquid-liquid extraction, purification and detoxification, bio flocculant </h4>
-            </div>
-            </details>
-            <details>
-            <summary>
-                <div>
-                    <span style="background-color: #f2dcbb;">
-                        21
-                    </span>
-                    <h3>
-                        <strong>Carbon footprint water</strong>
-
-                    </h3>
-
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTone" aria-expanded="false" aria-controls="collapseTone">
+                    <strong> Water Governance (TS-WGO)</strong>
+                  </button>
+                </h2>
+                <div id="collapseTone" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Water Economics; Water Administration; Water Policy                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Water footprint assessment, carbon-water-energy nexus, net zero carbon, Embodied carbon of water
-                    usage, carbon emission mitigation</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        22
-                    </span>
-                    <h3>
-                        <strong>Circular economy</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTtwo" aria-expanded="false" aria-controls="collapseTtwo">
+                    <strong> Water Reclamation from Industrial Effluents (TS-WRE)</strong>
+                  </button>
+                </h2>
+                <div id="collapseTtwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Integrated Process Design; Chemical Recovery and Reuse; Disinfection Technology                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Water sustainability, subcritical water extraction, Life Cycle Assessment of circular economy,
-                    Circular economic valuation</h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span style="background-color: #e0ece4;">
-                        23
-                    </span>
-                    <h3>
-                        <strong>Emerging contaminants in water and waste water</strong>
-
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTthree" aria-expanded="false" aria-controls="collapseTthree">
+                    <strong>Water Sanitation and Hygiene (TS-WSH)</strong>
+                  </button>
+                </h2>
+                <div id="collapseTthree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Water Quality Sanitation Intervention; Infection Prevention and Control; Clean Water and Sanitation                  </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Principal component analysis, Advanced oxidation processes, Nanoremediation, metal phytotoxicity,
-                    bioaccumulation of heavy metals </h4>
-            </div>
-        </details>
-        <details>
-            <summary>
-                <div>
-                    <span>
-                        24
-                    </span>
-                    <h3>
-                        <strong>Green Technologies for Crude oil processing water treatment</strong>
-                    </h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTfour" aria-expanded="false" aria-controls="collapseTfour">
+                    <strong>Water Sensitive Urban Design (TS-WSD)</strong>
+                  </button>
+                </h2>
+                <div id="collapseTfour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Smart Cities; Integrated Water Cycle Management; Sustainable Drainage System                   </div>
                 </div>
-            </summary>
-            <div>
-                <h4>Biotreatment, liquid-liquid extraction, purification and detoxification, bio flocculant </h4>
-            </div>
-
-
-        </details>
+              </div>
+          </div>
     </section>
 
-    <section  class="button-abs">
+    <!-- <section  class="button-abs">
         <h1 style="text-align: center; font-size: 25px; font-weight: 400;">Abstract Format</h1>
         <a href="./Abstract Template.docx" target="_blank">Abstact</a>
-    </section>
+    </section> -->
 
 
 

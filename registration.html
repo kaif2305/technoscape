@@ -23,30 +23,29 @@
        <div class="header-center">
          <img id="logo2" src="./Static/img/Technoscape black_ black 23_blue_20 logo.png" alt="logo">
        </div>
-         <div class="header-right">
-   
-         
-           <nav role='navigation'>
-               <label id="menuToggle">
-                   <input type="checkbox" />
-                   <span></span>
-                   <span></span>
-                   <span></span>
-                   <ul id="menu">
-                       <a href="/home.html"><li>Home</li></a>
-                       <a href ="/about.html"><li>About</li></a>
-                       <a href ="/conference.html"><li>Conference</li></a>
-                       <a href ="/committee.html"><li>Committee</li></a>
-						 <a href ="#"><li>Advisory Committee</li></a>
-                       <a href ="/partners.html"><li>Partners</li></a>
-                       <a href ="/location.html"><li>Location</li></a>
-                       <a href ="#contact-us"><li>Contact Us</li></a>
-                       <a href ="/registration.html"><li>Abstraction Submission</li></a>
-                   </ul>
-               </label>
+       <div class="header-right">
+         <nav role='navigation'>
+           <label id="menuToggle">
+               <input type="checkbox" />
+               <span></span>
+               <span></span>
+               <span></span>
+               <ul id="menu">
+                   <a href="/home.html"><li>Home</li></a>
+                   <a href ="/about.html"><li>About</li></a>
+                   <a href ="/conference.html"><li>Themes</li></a>
+                   <a href ="/committee.html"><li>Committee</li></a>
+                <a href ="#"><li>Advisory Committee</li></a>
+                <a href ="/registration.html"><li>Abstract Submission</li></a>
+                   <a href ="/partners.html"><li>Partners</li></a>
+                   <!-- <a href ="/location.html"><li>Location</li></a> -->
+                   <a href ="#contact-us"><li>Contact Us</li></a>
+                   
+               </ul>
+             </label>
            </nav>
        </header>
-      </div>
+       </div>
 
     <!-- <div class="cong-container">
       <div class="success-checkmark">
@@ -79,43 +78,75 @@
       </div> -->
 
       <section class="container">
-        <h4 style="font-size: 20px; font-weight: 400;">Abstract Submition</h4>
+        <h4 style="font-size: 20px; font-weight: 400;">Abstract Submission</h4>
         <form
           action="https://technoscape-abstract-backend.onrender.com/users"
           method="POST"
           enctype="multipart/form-data"
           class="form"
         >
-          <div class="gender-box">
+          <div class="title-box">
             <h3>Title</h3>
-            <div class="gender-option">
-              <div class="gender">
-                <input type="radio" id="dr" name="gender" checked />
-                <label for="check-male">Dr</label>
+            <div class="title-option">
+              <div class="title">
+                <input type="radio" id="dr" name="title" checked />
+                <label for="check-dr">Dr</label>
               </div>
-              <div class="gender">
-                <input type="radio" id="mr" name="gender" />
-                <label for="check-female">Mr</label>
+              <div class="title">
+                <input type="radio" id="mr" name="title" />
+                <label for="check-mr">Mr</label>
               </div>
-              <div class="gender">
-                <input type="radio" id="mrs" name="gender" />
-                <label for="check-other">Mrs</label>
+              <div class="title">
+                <input type="radio" id="mrs" name="title" />
+                <label for="check-mrs">Mrs</label>
               </div>
-              <div class="gender">
-                <input type="radio" id="miss" name="gender" />
-                <label for="check-other">Miss</label>
+              <div class="title">
+                <input type="radio" id="miss" name="title" />
+                <label for="check-miss">Miss</label>
+              </div>
+              <div class="title">
+                <input type="radio" id="miss" name="title" />
+                <label for="check-others">Others</label>
               </div>
             </div>
           </div>
 
           <div class="input-box">
-            <label>Full Name</label>
+            <label>First Name</label>
             <input
               type="text"
-              placeholder="Enter full name"
+              placeholder="Enter first name"
               required
               name="fullName"
             />
+          </div>
+
+          <div class="input-box">
+            <label>Family Name</label>
+            <input
+              type="text"
+              placeholder="Enter family name"
+              required
+              name="fullName"
+            />
+          </div>
+
+          <div class="gender-box">
+            <h3>Gender</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="dr" name="gender" checked />
+                <label for="check-male">Male</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="mr" name="gender" />
+                <label for="check-female">Female</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="mrs" name="gender" />
+                <label for="check-others">Others</label>
+              </div>
+            </div>
           </div>
 
           <div class="input-box">
@@ -133,58 +164,64 @@
             <div class="select-box">
               <select name="selectedTheme">
                 <option hidden>Select theme</option>
-                <option value="1">Carbon Footprint Reduction</option>
-                <option value="2">Advancements in Membrane Technologies</option>
-                <option value="3">Resource Recovery</option>
-                <option value="4">Circular Economy</option>
+                <option value="1">Advancements in Membrane Technologies- (TS-AMT)</option>
+                <option value="2">Carbon Footprint Reduction- (TS-CFP)</option>
+                <option value="3">Circular Economy-(TS-CEC)</option>
+                <option value="4">Ecological Sanitation-(TS-ESA)</option>
                 <option value="5">
-                  loT incorporated Water Resource Management
+                  Emerging Contaminants in Water and Wastewater-(TS-ECW)
                 </option>
                 <option value="6">
-                  lntegration of Al and ML in Water Technologies
+                  GIS and Remote Sensing in Water Monitoring-(TS-GIS)
                 </option>
-                <option value="7">Advancements in Desalination</option>
-                <option value="8">Water Governance</option>
+                <option value="7">Green Technology For Crude Oil Processed Water Treatment-(TS-GTC)</option>
+                <option value="8">Hydroponics and Smart Farming (TS-HSF)</option>
                 <option value="9">
-                  Socio-Economic issues concerning Wastewater Management
+                  Impact of Covid-19 on Wastewater Management (TS-ICO)
                 </option>
-                <option value="10">Water Sensitive Urban Design</option>
-                <option value="11">Water Sanitation and Hygiene (WASH)</option>
-                <option value="12">Ecological Sanitation</option>
-                <option value="13">Hydroponics and Smart Farming</option>
-                <option value="14">Water-Energy-Land-Food nexus</option>
+                <option value="10">Incorporation of IoT, AI and ML in Water Technologies (TS-IOT)</option>
+                <option value="11">Landless Farming (TS-LLF)</option>
+                <option value="12">Novel Desalination Technologies (TS-NDT)</option>
+                <option value="13">Phytoremediation (TS-PHY)</option>
+                <option value="14">Process Water Treatment Technology (TS-PWT)</option>
                 <option value="15">
-                  lmpact of COVlD-19 on Wastewater Management
+                  Produced Water Treatment (TS-PDT)
                 </option>
                 <option value="16">
-                  GlS and Remote Sensing in Water Monitoring
+                  Recovery and Remediation of Marine oil-spills (TS-RAR)
                 </option>
                 <option value="17">
-                  Recovery and Remediation of Marine oil-spills
+                  Resource Recovery-(TS-RRE)
                 </option>
                 <option value="18">
-                  Green Technologies for Crude Oil Processed Water Treatment
-                </option>
-                <option value="19">Produced Water Treatment</option>
-                <option value="20">Process Water Treatment Technology</option>
+                  Socio-Economic issues concerning Wastewater Management(TS-SEI)                </option>
+                <option value="19">Suistanable Initiatives to acheive Zero Liquid Discharge (TS-ZLD)</option>
+                <option value="20">Water-Energy-Land-Food Nexus (TS-WEL)</option>
                 <option value="21">
-                  Water Reclamation from lndustrial Effluents
+                  Water Governance (TS-WGO)
                 </option>
                 <option value="22">
-                  Sustainable lnitiatives to Achieve Zero Liquid Discharge
+                  Water Reclamation from Industrial Effluents (TS-WRE)
+                </option>
+                <option value="23">
+                  Water Sanitation and Hygiene (TS-WSH)
+                </option>
+                <option value="24">
+                  Water Sensitive Urban Design (TS-WSD)
                 </option>
               </select>
             </div>
           </div>
 
           <div class="input-box">
-            <label>Job Title</label>
+            <label>Category</label>
             <div class="select-box">
               <select name="jobTitle">
-                <option hidden>Job Title</option>
-                <option value="student">Student</option>
-                <option value="faculty">Faculty</option>
-                <option value="industrialist">Industrialist</option>
+                <option hidden>Category</option>
+                <option value="student">Academicians</option>
+                <option value="faculty">Research Scholar/Students</option>
+                <option value="industrialist">Industrial Delegates</option>
+                <option value="student">Accompanying Delegate</option>
               </select>
             </div>
           </div>
