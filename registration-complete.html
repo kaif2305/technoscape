@@ -15,6 +15,29 @@
   </head>
 
   <body>
+    <div class="cong-container">
+      <div class="success-checkmark">
+        <div class="check-icon">
+          <span class="icon-line line-tip"></span>
+          <span class="icon-line line-long"></span>
+          <div class="icon-circle"></div>
+          <div class="icon-fix"></div>
+        </div>
+      </div>
+
+      <h1>Congratulations!!</h1>
+
+      <h2 id="status-text">Your abstract is submitted for verification.</h2>
+
+      <p id="extra-info">
+        This is your unique code: <span id="code">Loading...</span><br />
+        Make sure to verify your email
+      </p>
+
+      <button id="action" class="reg-button-cong">
+        <a href="#">Resend Email</a>
+      </button>
+    </div>
     <script>
       // get query param "code"
       const urlParams = new URLSearchParams(window.location.search);
@@ -23,7 +46,7 @@
       const action = document.getElementById("action");
 
       if (typeof code === "string") {
-        document.getElementById("code").innerHTML = `TSIT: ${code}`;
+        document.getElementById("code").innerHTML = `TS${code}`;
         action.onclick = async (e) => {
           e.preventDefault();
           e.stopImmediatePropagation();
@@ -68,9 +91,9 @@
           "You can monitor progress of your submission in the dashboard.";
 
         // modify #action
-        action.innerHTML = '<a href="dashboard.html">Go to Dashboard</a>';
+        action.innerHTML = '<a href="home.html">Go to Dashboard</a>';
         action.onclick = (e) => {
-          window.location.href = "dashboard.html";
+          window.location.href = "home.html";
         };
       }
     </script>
