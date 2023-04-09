@@ -170,13 +170,29 @@
         <h2>Ask us anything</h2>
         <div class="calc-details">
           <div class="detail-cont">
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Full Name" name="fullName">
+          <input type="text" placeholder="Email" name="email">
         </div>
-        <input type="text" placeholder="Leave us a message...">
+        <input type="text" placeholder="Leave us a message..." name="query">
         </div>
 
-        <button>Submit</button>
+        <button id="submit-query">Submit</button>
+        <script>
+          document.getElementById("submit-query").addEventListener("click",async function(){
+            const sendQuery = await fetch("http://localhost:8081/contact-us", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({
+                fullName: document.getElementsByName("fullName")[0].value,
+                email: document.getElementsByName("email")[0].value,
+                query: document.getElementsByName("query")[0].value
+              })
+            });
+            alert("Thank you for your query. We will get back to you soon.");
+          });
+        </script>
       </div>
 
     </div>
