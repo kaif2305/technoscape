@@ -71,7 +71,7 @@
 
   <div class="chief-patrons">
 
-
+    <!-- fill in with javascript -->
   </div>
 
 
@@ -154,7 +154,7 @@
     </div>
   </footer>
   <script>
-    const createCard = ({ name, position, affiliation }) => {
+    const createCard = ({ title, name, position, affiliation }) => {
       const root = document.createElement('div');
       root.classList.add('Cprof-info-outer1');
       const imgChild = document.createElement('div');
@@ -167,7 +167,7 @@
       const detailsChild = document.createElement('div');
       detailsChild.classList.add('Cprof-details');
       const h1 = document.createElement('h1');
-      h1.innerText = name;
+      h1.innerText = `${title} ${name}`;
       const h2 = document.createElement('h2');
       h2.innerText = position;
       const h3 = document.createElement('h3');
@@ -178,99 +178,182 @@
       root.appendChild(detailsChild);
       return root;
     }
+    const text = `
+Prof. Akihiko Terada
+Tokyo University of Agriculture and Technology
+JAPAN 
+Prof. Anastasia Zabaniotou
+Aristotle University of Thessaloniki
+GREECE
+Prof. Anuradha Jabasingh S.
+Addis Ababa Institute of Technology
+ETHIOPIA
+Prof. Arunagiri A.
+National Institute of Technology Tiruchirappalli
+INDIA
+Prof. Atsushi Suzuki
+Yokohama National University
+JAPAN
+Prof. Beteley Tekola Meshesha
+Addis Ababa Institute of Technology
+ETHIOPIA
+Mr. Bhaskaran M N
+The Sanmar Group
+INDIA
+Prof. Carlo Ingrao
+University of Bari Aldo Moro
+ITALY
+Prof. Chi-Wang Li
+Tamkang University
+TAIWAN
+Prof. Dhanasekar R.
+Annamalai University
+INDIA
+Prof. Gerold Rahmann
+Johann Heinrich von Thünen Institute
+GERMANY
+Prof. Hau Thi Nguyen
+Dalat University
+VIETNAM
+Prof. Hem Raj Pant
+Tribhuvan University
+NEPAL
+Prof. Hideaki Yoshitake
+Yokohama National University
+JAPAN
+Prof. I Made Joni
+Universitas Padjadjaran
+INDONESIA
+Prof. Jacek Mąkinia
+Gdańsk University of Technology
+POLAND
+Dr. Jennifer P. Tamayo
+Forest Products Research and Development Institute
+PHILIPPINES
+Prof. Jih-Hsing Chang
+Chaoyang University of Technology
+TAIWAN
+Mr. Manikandan Vasudevan
+Hydranautics Inc.
+INDIA
+Ms. Mariko Mori
+Azumi Filter Paper Co. Ltd.
+JAPAN
+Prof. Md Shafiur Rahman
+Sultan Qaboos University
+OMAN
+Prof. Mohammed J.K. Bashir
+Universiti Tunku Abdul Rahman
+MALAYSIA
+Prof. Mohammed Shaad Ansari
+Linköping University
+SWEDEN
+Prof. Mukesh Upadhyay
+University of Limerick
+IRELAND
+Prof. Murugesan Thanabalan
+B. S. Abdur Rahman Crescent Institute of Science and Technology
+INDIA
+Prof. Mushtaque Ahmed
+Sultan Qaboos University
+OMAN
+Dr. Nandita Dasgupta
+Universidad de Burgos
+SPAIN
+Prof. Nguyen Cong Nguyen
+Dalat University
+VIETNAM
+Prof. Raghuram Chetty
+Indian Institute of Technology Madras
+INDIA
+Dr. Rajan Rathinasabapathy
+Phillips 66
+USA
+Prof. Ramachandran K P
+National University of Science & Technology
+OMAN
+Prof. Ramani Kannan
+University Teknologi PETRONAS
+MALAYSIA
+Dr. Randeep Singh
+Yeungnam University
+SOUTH KOREA
+Prof. Rangaiah GP
+National University of Singapore
+SINGAPORE
+Mr. Ravinder Singh C.
+AAKASH Plantation L.L.C.
+UAE
+Prof. Reddy Prasad D.M.
+Universiti Teknologi Brunei
+BRUNEI
+Prof. Regupathi I.
+National Institute of Technology Karnataka
+INDIA
+Mr. Sadanand K.
+Gradiant Corporation
+SINGAPORE
+Dr. Saikat Sinha Ray
+Ulsan National Institute of Science Technology
+SOUTH KOREA
+Ir. Ts. Sakthiaswaran Kaliappan
+Jabatan Kerja Raya
+MALAYSIA
+Prof. Sean Rigby
+University of Nottingham
+UNITED KINGDOM
+Prof. Sekar S. K.
+Vellore Institute of Technology
+INDIA
+Prof. Shiao-Shing Chen
+National Taipei University of Technology
+TAIWAN
+Prof. Shimelis Kebede Kassahun
+Addis Ababa Institute of Technology
+ETHIOPIA
+Prof. Shivendu Ranjan
+Indian Institute of Technology Kharagpur
+INDIA
+Dr. Sivakumar D.
+RANITEC
+INDIA
+Mr. Sylvain Usher
+African Water Association
+CÔTE D’IVOIRE
+Dr. TSK Sharma
+University of Ulsan
+SOUTH KOREA
+Prof. Wan Abd Al Qadr Imad Wan Mohtar
+Universiti Malaya
+MALAYSIA
+Prof. Watumesa Agustina Tan
+Universitas Katolik Indonesia Atma Jaya
+INDONESIA
+`.trim();
 
-    function parseProfessors(text) {
-      const lines = text.split('\n');
-      const professors = [];
-
-      lines.forEach(line => {
-        const regex = /^(Prof|Dr|Mr|Ms|Ir)\.?[-\s]*(.*?)[,\s]+(.*?)[,\.]+?\s*([A-Z][A-Z]+)$/;
-
-        const match = line.match(regex);
-
-        if (match) {
-          const title = match[1];
-          const name = match[2];
-          const university = match[3];
-          const country = match[4];
-
-          professors.push({
-            title,
-            name,
-            university,
-            country,
-          });
-        }
-      });
-
-      return professors;
-    }
-
-
-    const rawProfessors = `
-Prof- AkihikoTeradae TOkyo University Of Agriculture and Technology. JAPAN
-Prof- Anastasia Zabaniotoue Aristotle University of Thessaloniki, GREECE
-Prof- Anuradha Jabasingh S.e Addis Ababa Institute of Technology, ETHIOPIA
-Prof. Arunagiri A-. National Institute of Technology Tiruchirappalli, INDIA
-Prof- Atsushi Suzuki, Yokohama National Universitye JAPAN
-Prof- Beteley Tekola Meshesha, Addis Ababa Institute of Technology. ETHIOPIA
-Prof- Carlo Ingraoe University of Bari Aldo Moro. ITALY
-Prof- Chi-Wang Li. •ramkang UniversitYi TAIWAN
-Prof. Dhanasekar R.e Annamalai Universitye INDIA
-Prof- GeT01d Rahmann. Johann Heinrich Thijnen Institute. GERMANY
-Prof- GP Rangaiah, National UniveTsity Of Singapore SINGAPORE
-Prof- HauThi Nguyen Üalat University. VIETNAM
-Prof- Hem Raj Pant. Tribhuvan Univeßitye NEPAL
-Prof- Hideaki Yoshitake, Yokohama National Universitye JAPAN
-Prof. I Made Joni. UniveTGitas Padjadjaran. INDONESIA
-Prof- Jacek Mqkinia, Gdahsk üniversity of Technology. POLAND
-Dr Jennifer P. Tamayo, Forest Products Research and Development Institute. PHILIPPINES
-Prof- Jih•Hsing Changi Chaoyang University of Technology, TAIWAN
-Mr Manikandan Vasudevane Hydranaotics INDIA
-MS Mariko Marie Azumi Filter Paper co.. Ltd i JAPAN
-Prof- Md Shafcr Rahman. Sultan Qaboos Universitye OMAN
-Mr M N Bhaskaran. The Sanmar Group, INDIA
-Prof. Mohammed 1K. Bashire Universiti Tunku Abdul Rahman, MALAYSIA
-Dr Mohammed Shaad Ansari. Linkoping UniversitYi SWEDEN
-Dr Mukesh üpadhyaye University Of Limerick$ IRELAND
-Prof- Murugesan Thanabalan, S- Abdur Rahman Crescent Institute Of Science and Technology, INDIA
-Prof- Mushtaque Ahmed$ Sultan Qaboos Universitye OMAN
-Dr Nandita üasgupta, üniversidad de Burgose SPAIN
-Prof- Nguyen Cong Nguyen, Dalat University, VIETNAM
-Prof- Raghuram Chetty. Indian Institute of Technology Madrasv INDIA
-Dr Rajan Rathinasabapathy, Phillips 66. LISA
-Prof- Ramachandran K P' National University Of Science Technology. OMAN
-Prof- Ramani Kannane University Téknologi PETRONAS. MALAYSIA
-Dr Randeep Singh, Yeungnam University. SOUTH KOREA
-Mr Ravinder Singh C, A.AKASH Plantation L LCi LIAC
-Prof- Reddy Prasad D.M., Universiti Teknologi Brunei BRUNEI
-Prof- Regupathi I.e National Institute Of Technology Karnatakae INDIA
-Mr Sadanand Gradiant Corporation. SINGAPORE
-Dr Saikat Sinha Ray, Ulsan National Institute Of Science Technology, SOUTH KOREA
-Ir L. Sakthiaswaran Kaliappan, Jabatan Kerja Raya. MALAYSIA
-Prof- Sean Rigby. University Of Nottingham, U NITÉü KINGDOM
-Prof- Sekar S Vellore Institute ofTechnology. INDIA
-Prof. Shiao•Shing Chene National Taipei University of Technology, TAIWAN
-Prof. Shitnelis Kebede Kassahcn, Addis Ababa Institute of Technology. ETHIOPIA
-Prof. Shivendc Ranjan, Indian Institute of Technology KharagpLjL INDIA
-Or Sivakumar RANITEC, INDIA
-Mr Sylvain African Water Association. COTE D'IVOIRE
-Or TSK Sharma, University Of IJlsan, SOUTH KOREA
-Prof- Wan Abd A1 Qadr lmad Wan MohtaL Universiti Malaya. MALAYSIA
-Prof- Watumesa Agustina Tane Universitas Katolik Indonesia Atma Jayae INDONÉSIA
-
-    `.trim();
-    console.log(parseProfessors(rawProfessors));
+    const lines = text.split("\n");
     const root = document.querySelector(".chief-patrons");
-    parseProfessors(rawProfessors).forEach(v => {
-      root.appendChild(createCard({
-        name: `${v.title}. ${v.name}`,
-        position: v.country,
-        affiliation: v.university,
-      }));
-    })
-  </script>
+    for (let i = 0; i < lines.length; i += 3) {
+      // split first line into first ". "
+      let [title, name] = [
+        lines[i].split(". ")[0] + ".",
+        lines[i].split(". ").slice(1).join(". "),
+      ];
 
+      if (title === "Ir.") {
+        title = "Ir. Ts.";
+        name = lines[i].split(". ").slice(2).join(". ");
+      }
+
+
+      root.appendChild(createCard({
+        title,
+        name,
+        affiliation: lines[i + 1],
+        position: lines[i + 2],
+      }));
+    }
+  </script>
 </body>
 
 </html>
