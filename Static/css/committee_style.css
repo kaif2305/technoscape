@@ -239,7 +239,11 @@ body {
 
 @media screen and (max-width:1004px) {
     #title {
-        font-size: 18px;
+        font-size: 25px;
+    }
+    .Cprof-img img
+    {
+        width: 30%;
     }
 
     #title h1 {
@@ -274,13 +278,13 @@ body {
     }
 
     .Cprof-info-outer1 {
-        width: 500px;
+        width: 406px;
         display: inline-block;
         height: 400px;
     }
 
     .Cprof-info-outer2 {
-        width: 500px;
+        width: 406px;
         display: inline-block;
         height: 400px;
     }
@@ -384,19 +388,19 @@ body {
 
 @media screen and (max-width:1004px) {
     .Pprof-info-outer1 {
-        width: 500px;
+        width: 406px;
         display: inline-block;
         height: 400px;
     }
 
     .Pprof-info-outer2 {
-        width: 500px;
+        width: 406px;
         display: inline-block;
         height: 400px;
     }
 
     .Pprof-info-outer3 {
-        width: 500px;
+        width: 406px;
         display: inline-block;
         height: 400px;
     }
@@ -610,39 +614,41 @@ body {
     }
 
     .Sprof-info-outer1 {
-        width: 800px;
+        width: 600px;
         display: inline-block;
-        height: 380px;
+        height: 300px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
 
     .Sprof-info-outer2 {
-        width:  800px;
+        width:  600px;
         display: inline-block;
-        height: 380px;
+        height: 320px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
 
     .Sprof-info-outer3 {
-        width: 800px;
+        width: 600px;
         display: inline-block;
-        height: 380px;
+        height: 320px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
     .Sprof-info-outer4 {
-        width: 800px;
+        width: 600px;
         display: inline-block;
-        height: 380px;
+        height: 320px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
+
+    
 
     .Sprof-details h1 {
         font-size: 16px;
@@ -670,6 +676,172 @@ body {
 }
 
 
+@media screen and (max-width:800px) {
+
+
+   
+    .steering-committee {
+        width: 90%;
+    }
+
+    .Sprof-info button {
+        text-decoration: none;
+        margin-bottom: 1%;
+        background-color: white;
+        border: 1px solid black;
+        font-family: "lora";
+        font-size: 15px;
+        width: 45%;
+        padding: 3.9% 5.8%;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .Sprof-info-outer1 {
+        width: 600px;
+        display: inline-block;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .Sprof-info-outer2 {
+        width:  600px;
+        display: inline-block;
+        height: 320px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .Sprof-info-outer3 {
+        width: 600px;
+        display: inline-block;
+        height: 320px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .Sprof-info-outer4 {
+        width: 600px;
+        display: inline-block;
+        height: 320px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    
+
+    .Sprof-details h1 {
+        font-size: 16px;
+    }
+
+    .Sprof-details h2 {
+        font-size: 14px;
+
+        padding: 0;
+
+    }
+
+    .Sprof-details h3 {
+        font-size: 12px;
+
+    }
+    
+    .Sprof-info-text
+    {
+        font-size: 12px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:550px) {
+
+
+   
+    .steering-committee {
+        width: 90%;
+    }
+
+    .Sprof-info button {
+        text-decoration: none;
+        margin-bottom: 1%;
+        background-color: white;
+        border: 1px solid black;
+        font-family: "lora";
+        font-size: 15px;
+        width: 62%;
+        padding: 3.9% 5.8%;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .Sprof-info-outer1 {
+        width: 600px;
+        display: inline-block;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .Sprof-info-outer2 {
+        width:  600px;
+        display: inline-block;
+        height: 320px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .Sprof-info-outer3 {
+        width: 600px;
+        display: inline-block;
+        height: 320px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .Sprof-info-outer4 {
+        width: 600px;
+        display: inline-block;
+        height: 320px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    
+
+    .Sprof-details h1 {
+        font-size: 16px;
+    }
+
+    .Sprof-details h2 {
+        font-size: 14px;
+
+        padding: 0;
+
+    }
+
+    .Sprof-details h3 {
+        font-size: 12px;
+
+    }
+    
+    .Sprof-info-text
+    {
+        font-size: 12px;
+    }
+
+
+
+}
 /* @media screen and (max-width:1400px) {
     .steering-committee
     {

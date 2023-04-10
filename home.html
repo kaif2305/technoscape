@@ -248,86 +248,8 @@
                 alert("Thank you for your query. We will get back to you soon.");
               });
             </script>
-          </div>
-          
-    
+          </div> 
         </div>
-<<<<<<< Updated upstream
-
-
-      </div>
-
-      <div class="container2">
-        <div class="nav">
-          <a href="/home.html">Home</a>
-        </div>
-        <div class="nav">
-          <a href="#">About</a>
-        </div>
-        <div class="nav">
-          <a href="#">Themes</a>
-        </div>
-        <div class="nav">
-          <a href="#">Committees</a>
-        </div>
-        <div class="nav">
-          <a href="#">Partners</a>
-        </div>
-
-      </div>
-
-      <div class="container2">
-        <div class="nav">
-          <a href="#">Location</a>
-        </div>
-        <div class="nav">
-          <a href="#">Registration</a>
-        </div>
-      </div>
-
-      <div class="calc-container" id="contact-us">
-        <h1>Contact</h1>
-        <h2>Ask us anything</h2>
-        <div class="calc-details">
-          <div class="detail-cont">
-            <input type="text" placeholder="Full Name" name="fullName">
-            <input type="text" placeholder="Email" name="email">
-          </div>
-          <input type="text" placeholder="Leave us a message..." name="query">
-        </div>
-
-        <button id="submit-query">Submit</button>
-        <script>
-          document.getElementById("submit-query").addEventListener("click", async function () {
-            const sendQuery = fetch("https://technoscape-abstract-backend.onrender.com/contact-us", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify({
-                fullName: document.getElementsByName("fullName")[0].value,
-                email: document.getElementsByName("email")[0].value,
-                query: document.getElementsByName("query")[0].value
-              })
-            });
-            // clear the form
-            document.getElementsByName("fullName")[0].value = "";
-            document.getElementsByName("email")[0].value = "";
-            document.getElementsByName("query")[0].value = "";
-            alert("Thank you for your query. We will get back to you soon.");
-          });
-        </script>
-      </div>
-
-    </div>
-    <div class="bottom-details">
-      <h1>Technoscape'23</h1>
-
-      <button>FAQ</button>
-    </div>
-  </footer>
-
-=======
         <div class="bottom-details">
           <h1>Technoscape'23</h1>
     
@@ -336,11 +258,7 @@
     </div>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/bold-and-dark.js"></script>
-        
-        
     </footer>
-    
->>>>>>> Stashed changes
 </body>
 
 </html>
