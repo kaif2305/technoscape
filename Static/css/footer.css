@@ -221,11 +221,9 @@ footer{
   
   .bottom-details
   {
-    width: 80%;
+    width: 100%;
     border-top: 1px solid white;
     background: #0C6E98;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 2%;
     display: flex;
     flex-direction: row;
