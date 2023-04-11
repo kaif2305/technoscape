@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
 body
 {
   margin: 0;
+  /* font-family: 'Cormorant Garamond', serif; */
+    font-family: 'Lora', serif;
 }
 
 footer{
@@ -20,7 +25,7 @@ footer{
   
   .footer-content
   {
-    font-family: 'montserrat';
+    font-family: 'Lora', serif;
     width: 80%;
     background: #0C6E98;
     margin-left: 10%;
@@ -194,7 +199,7 @@ footer{
   .detail-cont input::placeholder
   {
     color: white;
-    font-family: 'montserrat' ;
+    font-family: 'Lora', serif;
     font-weight: 400;
     letter-spacing: 1px;
   }
@@ -216,7 +221,7 @@ footer{
   .calc-details input::placeholder
   {
     color: white;
-    font-family: 'montserrat' ;
+    font-family: 'Lora', serif;
     font-weight: 400;
     letter-spacing: 1px;
   }
@@ -268,7 +273,7 @@ footer{
     color: white;
     font-weight: 400;
     padding-top: 1%;
-    font-family: 'montserrat';
+    font-family: 'Lora', serif;
     width: 10%;
     margin-left: 41%;
   }

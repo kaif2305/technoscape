@@ -67,6 +67,7 @@ body{
 .our_team .team_member .member_img img{
   width: 60%;
   height: 60%;
+  object-fit: contain;
 }
 
 .our_team .team_member .member1_img img{
