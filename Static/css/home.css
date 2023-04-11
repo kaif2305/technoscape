@@ -53,14 +53,26 @@ body {
 
 .middle-container h1 {
     font-weight: 600;
+    margin: 0;
     font-size: 35px;
     margin-bottom: 15px;
+}
+
+.middle-container h1 span
+{
+    font-size: 45px;
 }
 
 .middle-container h2 {
     font-weight: 600;
     font-size: 30px;
     margin: 0;
+    margin-bottom: 1%;
+}
+
+.middle-container h2 span
+{
+    font-size: 40px;
 }
 
 .middle-container h3 {
@@ -137,30 +149,40 @@ body {
 
 
     .middle-container h1 {
-        font-weight: 600;
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
+
+    .middle-container h1 span
+    {
+        font-size: 30px;
+    }
+
     
     .middle-container h2 {
         font-weight: 600;
         font-size: 18px;
         margin: 0;
     }
+
+    .middle-container h2 span
+    {
+        font-size: 28px;
+    }
     
     .middle-container h3 {
         font-weight: 400;
-        font-size: 18px;
-        margin-top: 30px;
+        font-size: 16px;
+        margin-top: 14px;
     }
     
     .middle-container a {
         text-decoration: none;
         display: inline-block;
         color: #fff;
-        font-size: 18px;
+        font-size: 16px;
         border: 2px solid #fff;
-        padding: 10px 50px;
+        padding: 3% 8%;
         margin-top: 5px;
         font-weight: 400;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
