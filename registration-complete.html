@@ -1,101 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration complete</title>
-    <meta
-      name="description"
-      content="Technoscape a conference on chemical engineering conducted by Vellore Institute of Technology"
-    />
-    <link rel="stylesheet" href="./Static/css/reg_check.css" />
-    <link rel="stylesheet" href="./Static/css/reg_complete.css" />
-    <link rel="stylesheet" href="./Static/css/nav.css" />
-  </head>
 
-  <body>
-    <div class="cong-container">
-      <div class="success-checkmark">
-        <div class="check-icon">
-          <span class="icon-line line-tip"></span>
-          <span class="icon-line line-long"></span>
-          <div class="icon-circle"></div>
-          <div class="icon-fix"></div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration complete</title>
+  <meta name="description"
+    content="Technoscape a conference on chemical engineering conducted by Vellore Institute of Technology" />
+  <link rel="stylesheet" href="./Static/css/reg_check.css" />
+  <link rel="stylesheet" href="./Static/css/reg_complete.css" />
+  <link rel="stylesheet" href="./Static/css/nav.css" />
+</head>
+
+<body>
+  <div class="cong-container">
+    <div class="success-checkmark">
+      <div class="check-icon">
+        <span class="icon-line line-tip"></span>
+        <span class="icon-line line-long"></span>
+        <div class="icon-circle"></div>
+        <div class="icon-fix"></div>
       </div>
-
-      <h1>Congratulations!!</h1>
-
-      <h2 id="status-text">Your abstract is submitted for verification.</h2>
-
-      <p id="extra-info">
-        This is your unique code: <span id="code">Loading...</span><br />
-        Make sure to verify your email
-      </p>
-
-      <button id="action" class="reg-button-cong">
-        <a href="#">Resend Email</a>
-      </button>
     </div>
-    <script>
-      // get query param "code"
-      const urlParams = new URLSearchParams(window.location.search);
-      const code = urlParams.get("code");
-      // get #action
-      const action = document.getElementById("action");
 
-      if (typeof code === "string") {
-        document.getElementById("code").innerHTML = `TS${code}`;
-        action.onclick = async (e) => {
-          e.preventDefault();
-          e.stopImmediatePropagation();
-          e.stopPropagation();
+    <h1>Congratulations!!</h1>
 
-          // send email
-          const sendEmail = (code) => {
-            return fetch(
-              `https://technoscape-abstract-backend.onrender.com/users/resendEmail/${code}`,
-              {
-                method: "PUT",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-              }
-            );
-          };
-          const response = await sendEmail(code);
-          if (response.status === 200) {
-            alert("email successfully sent");
-          } else if (response.status === 404) {
-            alert("There was an error with your registration.");
-          } else if (response.status === 400) {
-            alert("email already verified");
-          } else {
-            alert(
-              "email was not sent due to an internal error. try again later"
-            );
-          }
-          console.log("email sent");
+    <h2 id="status-text">Your abstract is submitted for verification.</h2>
+
+    <p id="extra-info">
+      This is your unique code: <span id="code">Loading...</span><br />
+      Make sure to verify your email
+    </p>
+
+    <button id="action" class="reg-button-cong">
+      <a href="#">Resend Email</a>
+    </button>
+  </div>
+  <script>
+    // get query param "code"
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get("code");
+    // get #action
+    const action = document.getElementById("action");
+
+    if (typeof code === "string") {
+      document.getElementById("code").innerHTML = `TS${code}`;
+      action.onclick = async (e) => {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        e.stopPropagation();
+
+        // send email
+        const sendEmail = (code) => {
+          return fetch(
+            `https://technoscape-abstract-backend.onrender.com/users/resendEmail/${code}`,
+            {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
         };
-      } else {
-        console.log("code is not a string");
-        // get #status-text
-        const statusText = document.getElementById("status-text");
-        statusText.innerHTML = "Your email is successfully verified.";
-        statusText.style.color = "green";
+        const response = await sendEmail(code);
+        if (response.status === 200) {
+          alert("email successfully sent");
+        } else if (response.status === 404) {
+          alert("There was an error with your registration.");
+        } else if (response.status === 400) {
+          alert("email already verified");
+        } else {
+          alert(
+            "email was not sent due to an internal error. try again later"
+          );
+        }
+        console.log("email sent");
+      };
+    } else {
+      console.log("code is not a string");
+      // get #status-text
+      const statusText = document.getElementById("status-text");
+      statusText.innerHTML = "Your email is successfully verified.";
+      statusText.style.color = "green";
 
-        // get #extra-info
-        const extraInfo = document.getElementById("extra-info");
-        extraInfo.innerHTML =
-          "You can monitor progress of your submission in the dashboard.";
+      // get #extra-info
+      const extraInfo = document.getElementById("extra-info");
+      extraInfo.innerHTML =
+        "You can monitor progress of your submission in the dashboard.";
 
-        // modify #action
-        action.innerHTML = '<a href="home.html">Go to Dashboard</a>';
-        action.onclick = (e) => {
-          window.location.href = "home.html";
-        };
-      }
-    </script>
-  </body>
+      // modify #action
+      action.innerHTML = '<a href="home.html">Go to Dashboard</a>';
+      action.onclick = (e) => {
+        window.location.href = "home.html";
+      };
+    }
+  </script>
+</body>
+
 </html>

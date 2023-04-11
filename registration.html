@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Registration Page    </title>
-    <meta name="description" content="Technoscape a conference on chemical engineering conducted by Vellore Institute of Technology" />
-    <link rel="stylesheet" href="./Static/css/reg_new_style.css" />
-    <link rel="stylesheet" href="./Static/css/nav.css" />
-    <link rel="icon" type="image/x-icon" href="./Static/img/only logo.png">
-    <link rel="stylesheet" href="./Static/css/footer.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Registration Page </title>
+  <meta name="description"
+    content="Technoscape a conference on chemical engineering conducted by Vellore Institute of Technology" />
+  <link rel="stylesheet" href="./Static/css/reg_new_style.css" />
+  <link rel="stylesheet" href="./Static/css/nav.css" />
+  <link rel="icon" type="image/x-icon" href="./Static/img/only logo.png">
+  <link rel="stylesheet" href="./Static/css/footer.css">
+</head>
 
-    <div class="page">
-      <header>
-       <div class="header-left">
-         <img id="logo1" src="./Static/img/vit.png" alt="vit-logo">
-           <img id="logo3" src="./Static/img/sdg.png" alt="sdg-logo">
-       </div>
-   
-       <div class="header-center">
-         <img id="logo2" src="./Static/img/Technoscape black_ black 23_blue_20 logo.png" alt="logo">
-       </div>
-       <div class="header-right">
-         <nav role='navigation'>
-           <label id="menuToggle">
-               <input type="checkbox" />
-               <span></span>
-               <span></span>
-               <span></span>
-               <ul id="menu">
-                   <a href="/home.html"><li>Home</li></a>
-                   <a href ="/about.html"><li>About</li></a>
-                   <a href ="/conference.html"><li>Conference Themes</li></a>
-                   <a href ="/committee.html"><li>Committee</li></a>
-                   <!-- <a href ="/iac.html"><li>International Advisory Committee</li></a> -->
-                <a href ="/registration.html"><li>Abstract Submission</li></a>
-                   <a href ="/partners.html"><li>Partners</li></a>
-                   <!-- <a href ="/location.html"><li>Location</li></a> -->
-                   <a href ="#contact-us"><li>Contact Us</li></a>
-                   
-               </ul>
-             </label>
-           </nav>
-       </header>
-       </div>
+<body>
 
-    <!-- <div class="cong-container">
+  <div class="page">
+    <header>
+      <div class="header-left">
+        <img id="logo1" src="./Static/img/vit.png" alt="vit-logo">
+        <img id="logo3" src="./Static/img/sdg.png" alt="sdg-logo">
+      </div>
+
+      <div class="header-center">
+        <img id="logo2" src="./Static/img/Technoscape black_ black 23_blue_20 logo.png" alt="logo">
+      </div>
+      <div class="header-right">
+        <nav role='navigation'>
+          <label id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="/home.html">
+                <li>Home</li>
+              </a>
+              <a href="/about.html">
+                <li>About</li>
+              </a>
+              <a href="/conference.html">
+                <li>Conference Themes</li>
+              </a>
+              <a href="/committee.html">
+                <li>Committee</li>
+              </a>
+              <a href="/iac.html">
+                <li>International Advisory Committee</li>
+              </a>
+              <a href="/registration.html">
+                <li>Abstract Submission</li>
+              </a>
+              <a href="/partners.html">
+                <li>Partners</li>
+              </a>
+              <!-- <a href ="/location.html"><li>Location</li></a> -->
+              <a href="#contact-us">
+                <li>Contact Us</li>
+              </a>
+
+            </ul>
+          </label>
+        </nav>
+    </header>
+  </div>
+
+  <!-- <div class="cong-container">
       <div class="success-checkmark">
         <div class="check-icon">
           <span class="icon-line line-tip"></span>
@@ -71,7 +89,7 @@
         <a href="#">Resend Email</a>
       </button>
     </div> -->
-    <div class="most-outer">
+  <div class="most-outer">
     <div class="register-details">
       <!-- <div class="register-fee">
         <img src="./Static/img/regfee.png" alt="" />
@@ -80,12 +98,8 @@
 
       <section class="container">
         <h4 style="font-size: 20px; font-weight: 400;">Abstract Submission</h4>
-        <form
-          action="https://technoscape-abstract-backend.onrender.com/users"
-          method="POST"
-          enctype="multipart/form-data"
-          class="form"
-        >
+        <form action="https://technoscape-abstract-backend.onrender.com/users" method="POST"
+          enctype="multipart/form-data" class="form">
           <div class="title-box">
             <h3>Title</h3>
             <div class="title-option">
@@ -94,19 +108,19 @@
                 <label for="check-dr">Dr</label>
               </div>
               <div class="title">
-                <input type="radio" id="mr" name="title" value="Mr"/>
+                <input type="radio" id="mr" name="title" value="Mr" />
                 <label for="check-mr">Mr</label>
               </div>
               <div class="title">
-                <input type="radio" id="mrs" name="title" value="Mrs"/>
+                <input type="radio" id="mrs" name="title" value="Mrs" />
                 <label for="check-mrs">Mrs</label>
               </div>
               <div class="title">
-                <input type="radio" id="miss" name="title" value="Ms"/>
+                <input type="radio" id="miss" name="title" value="Ms" />
                 <label for="check-miss">Miss</label>
               </div>
               <div class="title">
-                <input type="radio" id="others" name="title" value="others"/>
+                <input type="radio" id="others" name="title" value="others" />
                 <label for="check-others">Others</label>
               </div>
             </div>
@@ -114,22 +128,12 @@
 
           <div class="input-box">
             <label>First Name</label>
-            <input
-              type="text"
-              placeholder="Enter first name"
-              required
-              name="firstName"
-            />
+            <input type="text" placeholder="Enter first name" required name="firstName" />
           </div>
 
           <div class="input-box">
             <label>Family Name</label>
-            <input
-              type="text"
-              placeholder="Enter family name"
-              required
-              name="lastName"
-            />
+            <input type="text" placeholder="Enter family name" required name="lastName" />
           </div>
 
           <div class="gender-box">
@@ -152,12 +156,7 @@
 
           <div class="input-box">
             <label>Email Address</label>
-            <input
-              type="text"
-              placeholder="Enter email address"
-              required
-              name="email"
-            />
+            <input type="text" placeholder="Enter email address" required name="email" />
           </div>
 
           <div class="input-box">
@@ -195,7 +194,7 @@
                   Resource Recovery-(TS-RRE)
                 </option>
                 <option value="SEI">
-                  Socio-Economic issues concerning Wastewater Management(TS-SEI)                </option>
+                  Socio-Economic issues concerning Wastewater Management(TS-SEI) </option>
                 <option value="ZLD">Suistanable Initiatives to acheive Zero Liquid Discharge (TS-ZLD)</option>
                 <option value="WEL">Water-Energy-Land-Food Nexus (TS-WEL)</option>
                 <option value="WGO">
@@ -546,12 +545,7 @@
 
           <div class="input-box">
             <label>Upload File</label>
-            <input
-              type="file"
-              class="custom-file-input"
-              required
-              name="uploadedAbstract"
-            />
+            <input type="file" class="custom-file-input" required name="uploadedAbstract" />
           </div>
 
           <button>Submit</button>
@@ -574,7 +568,7 @@
           <h4>Vellore, Tamil Nadu, INDIA.</h4>
         </div>
 
-       
+
 
       </div>
 
@@ -597,17 +591,17 @@
         </div>
       </div>
 
-   
+
 
       <div class="calc-container" id="contact-us">
         <h1>Contact Us</h1>
         <h2>Post your queries regarding TECHNOSCAPE<sup>23</sup></h2>
         <div class="calc-details">
           <div class="detail-cont">
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-        </div>
-        <input type="text" placeholder="Leave us a message...">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email">
+          </div>
+          <input type="text" placeholder="Leave us a message...">
         </div>
 
         <button>Submit</button>
@@ -615,10 +609,11 @@
 
     </div>
     <div class="bottom-details">
-        <h1>Technoscape'23</h1>
+      <h1>Technoscape'23</h1>
 
-        <!-- <button>FAQ</button> -->
+      <!-- <button>FAQ</button> -->
     </div>
   </footer>
-  </body>
+</body>
+
 </html>
