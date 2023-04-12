@@ -60,9 +60,9 @@ header {
 }
 
 .header-left img {
-  width: 40%;
-  height: 100%;
-  padding-top: 3%;
+  width: 37.5%;
+  height: 50%;
+  padding-top: 4.2%;
   object-fit: contain;
 }
 
@@ -80,12 +80,12 @@ header {
 .header-center {
   width: 30%;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 9%;
 }
 
 .header-center img {
   width: 100%;
-  height: 80%;
+  height: 68%;
   padding-top: 3%;
   object-fit: contain;
 }
