@@ -88,7 +88,7 @@
             <img src="twb.png" alt="logo">
         </div>-->
 
-    <style>
+    <!-- <style>
       .offcanvas.offcanvas-start {
         top: inherit;
         left: 0;
@@ -97,7 +97,7 @@
         transform: translateX(-100%);
         /* height: 100%; */
       }
-    </style>
+    </style> -->
 
 
     <div class="middle-container">
@@ -111,22 +111,12 @@
       </h1>
       <h3>TRANSCEND - EVOLVE - SUSTAIN</h3>
 
-      <a href="brochure.pdf" target="_blank">BROCHURE</a>
+      <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        Download
+      </a>
+      
       <!-- <a class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Download</a> -->
-
-      <div class="offcanvas offcanvas-start top-none h-85" data-bs-scroll="true" tabindex="-1"
-        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-        <div class="offcanvas-body">
-          <p>Try scrolling the rest of the page to see this option in action.</p>
-        </div>
-      </div>
-
     </div>
 
     <div class="bottom-container">
@@ -136,9 +126,29 @@
 
     </div>
     <img src="./Static/img/home1.png" alt="Home image">
+    
 
   </div>
 
+
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title m-3" id="offcanvasExampleLabel">Download Links</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body m-3 ">
+      <div class="h5 ">
+       Brochure
+      </div>
+      <a class="btn btn-outline-dark" href="brochure.pdf"  target="_blank" role="button">Download</a>
+    
+    <div class="h5 mt-4">
+     Abstract Format
+    </div>
+    <a class="btn btn-outline-dark" href="Abstract Template.docx" target="_blank" role="button">Download</a>
+  </div>
+  </div>
   <div class="clock-bg">
 
 
@@ -157,6 +167,8 @@
       </ul>
     </div>
   </div>
+
+  
 
   <!-- <div class="register-box" >
     <h1>Register</h1>
