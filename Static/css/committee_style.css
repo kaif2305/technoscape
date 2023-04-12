@@ -575,6 +575,8 @@ body {
   font-family: "lora";
   font-size: 15px;
   width: 38%;
+  margin-left: 31%;
+  margin-right: 31%;
   padding: 3.9% 5.8%;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -729,6 +731,8 @@ body {
     font-family: "lora";
     font-size: 15px;
     width: 62%;
+    margin-left: 15%;
+    margin-right: 23%;
     padding: 3.9% 5.8%;
     transition-duration: 0.4s;
     cursor: pointer;
