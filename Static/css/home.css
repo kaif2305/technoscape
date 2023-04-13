@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: -126px;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-container {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+.top-container img {
+  width: auto;
+  margin-top: 3%;
+}
+
+.middle-container {
+  margin-left: 10%;
+  width: 80%;
+  margin-right: 10%;
+  top: 25%;
+  position: absolute;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  color: #fff;
+  z-index: 1;
+}
+
+.middle-container h1 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.middle-container h1 span {
+  font-size: 45px;
+}
+
+.middle-container h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 1%;
+}
+
+.middle-container h2 span {
+  font-size: 40px;
+}
+
+.middle-container h3 {
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.middle-container a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  margin-top: 10px;
+  font-weight: 400;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.middle-container a:hover {
+  background-color: #fff;
+  color: black;
+  border: none;
+  box-shadow: 0px 15px 20px rgba(34, 34, 34, 0.668);
+  transform: translateY(-7px);
+}
+
+.bottom-container {
+  bottom: 1.5%;
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  text-align: center;
+}
+
+.bottom-container img[id="left"] {
+  width: auto;
+  left: 0.4%;
+  height: 80%;
+  bottom: 0;
+  position: absolute;
+}
+
+.bottom-container img[id="right"] {
+  width: auto;
+  height: 60%;
+  bottom: 0;
+  right: 2%;
+  position: absolute;
+  z-index: 1;
+}
+
+.bottom-container img[id="collab"] {
+  width: auto;
+  height: 100%;
+  bottom: 0;
+  align-self: center;
+  position: relative;
+}
+
+@media screen and (max-width: 1500px) {
+  .middle-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .middle-container h1 span {
+    font-size: 34px;
+  }
+
+  .middle-container h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .middle-container h2 span {
+    font-size: 30px;
+  }
+
+  .middle-container h3 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 14px;
+  }
+
+  .middle-container a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid #fff;
+    padding: 2% 6%;
+    margin-top: 5px;
+    font-weight: 400;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .bottom-container {
+    height: 22%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .bottom-container {
+    height: 14%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .middle-container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .middle-container h1 span {
+    font-size: 30px;
+  }
+
+  .middle-container h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .middle-container h2 span {
+    font-size: 28px;
+  }
+
+  .middle-container h3 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 14px;
+  }
+
+  .middle-container a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid #fff;
+    padding: 3% 8%;
+    margin-top: 5px;
+    font-weight: 400;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .bottom-container {
+    height: 15%;
+  }
+
+  .bottom-container img[id="right"] {
+    visibility: hidden;
+    width: auto;
+    height: 60%;
+    bottom: 0;
+    right: 2%;
+    position: absolute;
+  }
+
+  .bottom-container img[id="left"] {
+    visibility: hidden;
+    width: auto;
+    height: 60%;
+    bottom: 0;
+    right: 2%;
+    position: absolute;
+  }
+}
+.register-box {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/water.png");
+  background-size: 100% 100%;
+  margin: 4% 10%;
+  text-align: center;
+  color: white;
+}
+
+.register-box .text a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  font-weight: 400;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding: 2% 7%;
+  font-size: large;
+}
+
+.register-box h1 {
+  font-family: "Cormorant Garamond", serif;
+  padding: 1.4%;
+  font-size: x-large;
+}
+
+.register-box .text {
+  font-family: "Cormorant Garamond", serif;
+  padding-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  font-size: large;
+}
+
+.register-box .text a:hover {
+  background-color: #fff;
+  color: black;
+  border: none;
+  box-shadow: 0px 15px 20px rgba(34, 34, 34, 0.668);
+  transform: translateY(-7px);
+}
+.clock-bg {
+  z-index: -1;
+}

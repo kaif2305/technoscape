@@ -1,0 +1,464 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Advisory Committee</title>
+  <link rel="stylesheet" href="./Static/css/iac.css" />
+  <link rel="stylesheet" href="./Static/css/nav_about_committee.css" />
+  <link rel="stylesheet" href="./Static/css/footer_abt_commit.css" />
+  <link rel="icon" type="image/x-icon" href="./Static/img/only logo.png" />
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="header-left">
+        <img src="./Static/img/VIT Blue.png" alt="" />
+      </div>
+
+      <div class="header-center">
+        <img id="logo2" src="./Static/img/Technoscape black_ black 23_blue_20 logo.png" alt="logo" />
+      </div>
+      <div class="header-right">
+        <nav role="navigation">
+          <label id="menuToggle">
+            <input type="checkbox" id="menu-toggle-check" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="/home.html">
+                <li>Home</li>
+              </a>
+              <a href="/about.html">
+                <li>About</li>
+              </a>
+              <a href="/conference.html">
+                <li>Conference Themes</li>
+              </a>
+              <a href="/committee.html">
+                <li>Committee</li>
+              </a>
+              <a href="/iac.html">
+                <li>International Advisory Committee</li>
+              </a>
+              <a href="/registration.html">
+                <li>Abstract Submission</li>
+              </a>
+              <a href="/partners.html">
+                <li>Partners</li>
+              </a>
+              <!-- <a href ="/location.html"><li>Location</li></a> -->
+              <a href="#contact-us" id="contact-us-link">
+                <li>Contact Us</li>
+              </a>
+            </ul>
+          </label>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <div id="title">
+    <h1>International Advisory Committee</h1>
+  </div>
+
+  <div class="chief-patrons">
+    <!-- fill in with javascript -->
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="left-content">
+        <img src="./Static/img/logo1.png" alt="" />
+        <div class="details" style="padding-top: 8%">
+          <h1>Dr Mahesh Ganesapillai</h1>
+          <h4>Conference Chair-TECHNOSCAPE<sup>23</sup></h4>
+          <h4>Professor-School of Chemical Engineering,</h4>
+          <h4>Vellore Institute of Technology,</h4>
+          <h4>Vellore, Tamil Nadu, INDIA.</h4>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="msg-phn">
+          <img src="./Static/img/message.png" alt="" />
+          <h3>maheshgpillai@vit.ac.in</h3>
+        </div>
+        <div class="msg-phn">
+          <img src="./Static/img/message.png" alt="" />
+          <h3>technoscape.support@vit.ac.in</h3>
+        </div>
+        <div class="msg-phn">
+          <img src="./Static/img/phone.png" alt="" />
+          <h3>+91 9444-135-437</h3>
+        </div>
+        <div class="msg-phn">
+          <img src="./Static/img/globe.png" alt="" />
+          <h3>http://technoscape.in</h3>
+        </div>
+      </div>
+
+      <div class="calc-container" id="contact-us">
+        <h1>Contact Us</h1>
+        <h2>Post your queries regarding TECHNOSCAPE<sup>23</sup></h2>
+        <div class="calc-details">
+          <div class="detail-cont">
+            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <input type="text" placeholder="Leave us a message..." />
+        </div>
+
+        <button>Submit</button>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <h1>TECHNOSCAPE<sup>23</sup></h1>
+
+      <!-- <button>FAQ</button> -->
+    </div>
+  </footer>
+  <script>
+    const createCard = ({ title, name, position, affiliation }) => {
+      const root = document.createElement("div");
+      root.classList.add("Cprof-info-outer1");
+      const imgChild = document.createElement("div");
+      imgChild.classList.add("Cprof-img");
+      const img = document.createElement("img");
+      img.src = `./Static/img/prof/${name}.jpeg`;
+      img.alt = "prof";
+      imgChild.appendChild(img);
+      root.appendChild(imgChild);
+      const detailsChild = document.createElement("div");
+      detailsChild.classList.add("Cprof-details");
+      const h1 = document.createElement("h1");
+      h1.innerText = `${title} ${name}`;
+      const h2 = document.createElement("h2");
+      h2.innerText = position;
+      const h3 = document.createElement("h3");
+      h3.innerText = `${affiliation}`;
+      detailsChild.appendChild(h1);
+      detailsChild.appendChild(h2);
+      detailsChild.appendChild(h3);
+      root.appendChild(detailsChild);
+      return root;
+    };
+    const text = `
+Prof. Akihiko Terada
+Tokyo University of Agriculture and Technology
+JAPAN 
+Prof. Anastasia Zabaniotou
+Aristotle University of Thessaloniki
+GREECE
+Prof. Anuradha Jabasingh S.
+Addis Ababa Institute of Technology
+ETHIOPIA
+Prof. Arunagiri A.
+National Institute of Technology Tiruchirappalli
+INDIA
+Prof. Atsushi Suzuki
+Yokohama National University
+JAPAN
+Prof. Beteley Tekola Meshesha
+Addis Ababa Institute of Technology
+ETHIOPIA
+Mr. Bhaskaran M N
+The Sanmar Group
+INDIA
+Prof. Carlo Ingrao
+University of Bari Aldo Moro
+ITALY
+Prof. Chi-Wang Li
+Tamkang University
+TAIWAN
+Prof. Dhanasekar R.
+Annamalai University
+INDIA
+Prof. Gerold Rahmann
+Johann Heinrich von Thünen Institute
+GERMANY
+Prof. Hau Thi Nguyen
+Dalat University
+VIETNAM
+Prof. Hem Raj Pant
+Tribhuvan University
+NEPAL
+Prof. Hideaki Yoshitake
+Yokohama National University
+JAPAN
+Prof. I Made Joni
+Universitas Padjadjaran
+INDONESIA
+Prof. Jacek Mąkinia
+Gdańsk University of Technology
+POLAND
+Dr. Jennifer P. Tamayo
+Forest Products Research and Development Institute
+PHILIPPINES
+Prof. Jih-Hsing Chang
+Chaoyang University of Technology
+TAIWAN
+Mr. Manikandan Vasudevan
+Hydranautics Inc.
+INDIA
+Ms. Mariko Mori
+Azumi Filter Paper Co. Ltd.
+JAPAN
+Prof. Md Shafiur Rahman
+Sultan Qaboos University
+OMAN
+Prof. Mohammed J.K. Bashir
+Universiti Tunku Abdul Rahman
+MALAYSIA
+Prof. Mohammed Shaad Ansari
+Linköping University
+SWEDEN
+Prof. Mukesh Upadhyay
+University of Limerick
+IRELAND
+Prof. Murugesan Thanabalan
+B. S. Abdur Rahman Crescent Institute of Science and Technology
+INDIA
+Prof. Mushtaque Ahmed
+Sultan Qaboos University
+OMAN
+Dr. Nandita Dasgupta
+Universidad de Burgos
+SPAIN
+Prof. Nguyen Cong Nguyen
+Dalat University
+VIETNAM
+Prof. Raghuram Chetty
+Indian Institute of Technology Madras
+INDIA
+Dr. Rajan Rathinasabapathy
+Phillips 66
+USA
+Prof. Ramachandran K P
+National University of Science & Technology
+OMAN
+Prof. Ramani Kannan
+University Teknologi PETRONAS
+MALAYSIA
+Dr. Randeep Singh
+Yeungnam University
+SOUTH KOREA
+Prof. Rangaiah GP
+National University of Singapore
+SINGAPORE
+Mr. Ravinder Singh C.
+AAKASH Plantation L.L.C.
+UAE
+Prof. Reddy Prasad D.M.
+Universiti Teknologi Brunei
+BRUNEI
+Prof. Regupathi I.
+National Institute of Technology Karnataka
+INDIA
+Mr. Sadanand K.
+Gradiant Corporation
+SINGAPORE
+Dr. Saikat Sinha Ray
+Ulsan National Institute of Science Technology
+SOUTH KOREA
+Ir. Ts. Sakthiaswaran Kaliappan
+Jabatan Kerja Raya
+MALAYSIA
+Prof. Sean Rigby
+University of Nottingham
+UNITED KINGDOM
+Prof. Sekar S. K.
+Vellore Institute of Technology
+INDIA
+Prof. Shiao-Shing Chen
+National Taipei University of Technology
+TAIWAN
+Prof. Shimelis Kebede Kassahun
+Addis Ababa Institute of Technology
+ETHIOPIA
+Prof. Shivendu Ranjan
+Indian Institute of Technology Kharagpur
+INDIA
+Dr. Sivakumar D.
+RANITEC
+INDIA
+Mr. Sylvain Usher
+African Water Association
+CÔTE D’IVOIRE
+Dr. TSK Sharma
+University of Ulsan
+SOUTH KOREA
+Prof. Wan Abd Al Qadr Imad Wan Mohtar
+Universiti Malaya
+MALAYSIA
+Prof. Watumesa Agustina Tan
+Universitas Katolik Indonesia Atma Jaya
+INDONESIA
+`.trim();
+
+    const tempText = `
+Prof. Akihiko Terada
+Tokyo University of Agriculture and Technology
+JAPAN 
+Prof. Anastasia Zabaniotou
+Aristotle University of Thessaloniki
+GREECE
+Prof. Anuradha Jabasingh S.
+Addis Ababa Institute of Technology
+ETHIOPIA
+Prof. Arunagiri A.
+National Institute of Technology Tiruchirappalli
+INDIA
+Prof. Atsushi Suzuki
+Yokohama National University
+JAPAN
+Prof. Beteley Tekola Meshesha
+Addis Ababa Institute of Technology
+ETHIOPIA
+Mr. Bhaskaran M N
+The Sanmar Group
+INDIA
+Prof. Carlo Ingrao
+University of Bari Aldo Moro
+ITALY
+Prof. Chi-Wang Li
+Tamkang University
+TAIWAN
+Prof. Dhanasekar R.
+Annamalai University
+INDIA
+Prof. Gerold Rahmann
+Johann Heinrich von Thünen Institute
+GERMANY
+Prof. Hau Thi Nguyen
+Dalat University
+VIETNAM
+Prof. Hem Raj Pant
+Tribhuvan University
+NEPAL
+Prof. Hideaki Yoshitake
+Yokohama National University
+JAPAN
+Prof. I Made Joni
+Universitas Padjadjaran
+INDONESIA
+Prof. Jacek Mąkinia
+Gdańsk University of Technology
+POLAND
+Dr. Jennifer P. Tamayo
+Forest Products Research and Development Institute
+PHILIPPINES
+Prof. Jih-Hsing Chang
+Chaoyang University of Technology
+TAIWAN
+Mr. Manikandan Vasudevan
+Hydranautics Inc.
+INDIA
+Prof. Md Shafiur Rahman
+Sultan Qaboos University
+OMAN
+Prof. Mohammed J.K. Bashir
+Universiti Tunku Abdul Rahman
+MALAYSIA
+Prof. Mohammed Shaad Ansari
+Linköping University
+SWEDEN
+Prof. Mukesh Upadhyay
+University of Limerick
+IRELAND
+Prof. Murugesan Thanabalan
+B. S. Abdur Rahman Crescent Institute of Science and Technology
+INDIA
+Prof. Mushtaque Ahmed
+Sultan Qaboos University
+OMAN
+Dr. Nandita Dasgupta
+Universidad de Burgos
+SPAIN
+Prof. Nguyen Cong Nguyen
+Dalat University
+VIETNAM
+Prof. Raghuram Chetty
+Indian Institute of Technology Madras
+INDIA
+Dr. Rajan Rathinasabapathy
+Phillips 66
+USA
+Prof. Ramachandran K P
+National University of Science & Technology
+OMAN
+Prof. Ramani Kannan
+University Teknologi PETRONAS
+MALAYSIA
+Dr. Randeep Singh
+Yeungnam University
+SOUTH KOREA
+Prof. Reddy Prasad D.M.
+Universiti Teknologi Brunei
+BRUNEI
+Dr. Saikat Sinha Ray
+Ulsan National Institute of Science Technology
+SOUTH KOREA
+Ir. Ts. Sakthiaswaran Kaliappan
+Jabatan Kerja Raya
+MALAYSIA
+Prof. Sean Rigby
+University of Nottingham
+UNITED KINGDOM
+Prof. Sekar S. K.
+Vellore Institute of Technology
+INDIA
+Prof. Shiao-Shing Chen
+National Taipei University of Technology
+TAIWAN
+Prof. Shimelis Kebede Kassahun
+Addis Ababa Institute of Technology
+ETHIOPIA
+Prof. Shivendu Ranjan
+Indian Institute of Technology Kharagpur
+INDIA
+Mr. Sylvain Usher
+African Water Association
+CÔTE D’IVOIRE
+Dr. TSK Sharma
+University of Ulsan
+SOUTH KOREA
+Prof. Wan Abd Al Qadr Imad Wan Mohtar
+Universiti Malaya
+MALAYSIA
+Prof. Watumesa Agustina Tan
+Universitas Katolik Indonesia Atma Jaya
+INDONESIA
+`.trim();
+
+    const lines = tempText.split("\n");
+    const root = document.querySelector(".chief-patrons");
+    for (let i = 0; i < lines.length; i += 3) {
+      // split first line into first ". "
+      let [title, name] = [
+        lines[i].split(". ")[0] + ".",
+        lines[i].split(". ").slice(1).join(". "),
+      ];
+
+      if (title === "Ir.") {
+        title = "Ir. Ts.";
+        name = lines[i].split(". ").slice(2).join(". ");
+      }
+
+      root.appendChild(
+        createCard({
+          title,
+          name,
+          affiliation: lines[i + 1],
+          position: lines[i + 2],
+        })
+      );
+    }
+  </script>
+  <script src="./Static/js/menu_contact_us_off.js"></script>
+</body>
+
+</html>

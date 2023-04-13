@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+
+.cong-container {
+  margin: auto;
+  margin-top: 5%;
+  width: 60%;
+  text-align: center;
+  font-family: "lora";
+}
+
+.cong-container h1 {
+  font-weight: 400;
+}
+
+.cong-container h2 {
+  font-weight: 400;
+}
+
+.cong-container p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.cong-container span {
+  color: red;
+  font-weight: 600;
+}
+
+.reg-button-cong {
+  padding: 1.5% 1%;
+  border: 1px solid black;
+  background-color: white;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  transition-duration: 1.4ms;
+}
+
+.reg-button-cong a {
+  text-decoration: none;
+  color: black;
+}
+
+.reg-button-cong:hover {
+  background-color: rgb(155, 236, 141);
+}
