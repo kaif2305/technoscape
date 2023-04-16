@@ -96,7 +96,13 @@
       </div> -->
 
       <section class="container">
-        <h4 style="font-size: 20px; font-weight: 400;">Abstract Submission</h4>
+        <h4 style="font-size: 20px; font-weight: 400;">Abstract Submission</h4> <br>
+        <ul>
+          <li>Abstract Template Link: <a href="#"><b style="color: blue; border-bottom: 1px solid blue;">Abstract Template</b> </a></li>
+          <li>Abstracts should be submitted only in the prescribed template format</li>
+          <li>Only PDF files are accepted</li>
+          <li>Maximum file size is <span style="color: red;">2MB</span></li>
+        </ul>
         <form action="https://technoscape-abstract-backend.onrender.com/users" method="POST"
           enctype="multipart/form-data" class="form">
           <div class="title-box">
@@ -543,8 +549,8 @@
           </div>
 
           <div class="input-box">
-            <label>Upload File</label>
-            <input type="file" class="custom-file-input" required name="uploadedAbstract" />
+            <label>Upload File <b style="color: red;">[Max size: 2MB]</b></label>
+            <input type="file" id="file" class="custom-file-input" required name="uploadedAbstract" />
           </div>
 
           <button>Submit</button>
@@ -552,6 +558,17 @@
       </section>
     </div>
   </div>
+
+  <!-- <script>
+    var uploadField = document.getElementById("file");
+
+uploadField.onchange = function() {
+    if(this.files[0].size > 2097152){
+       alert("File is too big!");
+       this.value = "";
+    };
+};
+  </script> -->
 
 
   <footer>
