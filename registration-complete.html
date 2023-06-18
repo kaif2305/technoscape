@@ -54,7 +54,7 @@
         // send email
         const sendEmail = (code) => {
           return fetch(
-            `https://technoscape-abstract-backend.onrender.com/users/resendEmail/${code}`,
+            `https://api.technoscape.in/users/resendEmail/${code}`,
             {
               method: "PUT",
               headers: {
