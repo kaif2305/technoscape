@@ -127,6 +127,16 @@ body {
   position: relative;
 }
 
+.marq {
+  position: relative;
+  background-color: #fafafa;
+  padding-top: 0.6%;
+  color: red;
+  font-weight: 600;
+  font-size: calc(0.8*(1vh + 1vw));
+
+}
+
 @media screen and (max-width: 1500px) {
   .middle-container h1 {
     font-size: 24px;
@@ -176,6 +186,13 @@ body {
   .bottom-container {
     height: 14%;
   }
+
+  .marq {
+    font-size: calc(0.8*(1.2vh + 1.2vw));
+
+  }
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -239,7 +256,13 @@ body {
     right: 2%;
     position: absolute;
   }
+
+  .marq {
+    font-size: calc(0.8*(1.5vh + 1.5vw));
+
+  }
 }
+
 .register-box {
   display: flex;
   flex-direction: column;
@@ -288,6 +311,7 @@ body {
   box-shadow: 0px 15px 20px rgba(34, 34, 34, 0.668);
   transform: translateY(-7px);
 }
+
 .clock-bg {
   z-index: -1;
 }
