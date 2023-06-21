@@ -74,11 +74,13 @@ body {
     background: linear-gradient(to bottom, rgb(0 0 0 / 50%), rgb(0 0 0 / 10%));
 }
 
-.content h2 {
+.content .marq-index {
     color: red;
     font-weight: 600;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.25);
     font-size: calc(1.5*(1vh + 1vw));
-    text-shadow: 0px 1px 1px rgba(34, 34, 34, 0.668);
+    text-shadow: 0px 1px 1px rgba(34, 34, 34, 0.3);
 }
 
 @media screen and (max-width: 450px) {
