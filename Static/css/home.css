@@ -133,7 +133,7 @@ body {
   padding-top: 0.6%;
   color: red;
   font-weight: 600;
-  font-size: calc(0.8*(1vh + 1vw));
+  font-size: calc(1*(1vh + 1vw));
 
 }
 
@@ -188,7 +188,7 @@ body {
   }
 
   .marq {
-    font-size: calc(0.8*(1.2vh + 1.2vw));
+    font-size: calc(1*(1.2vh + 1.2vw));
 
   }
 
@@ -258,7 +258,7 @@ body {
   }
 
   .marq {
-    font-size: calc(0.8*(1.5vh + 1.5vw));
+    font-size: calc(1*(1.5vh + 1.5vw));
 
   }
 }
