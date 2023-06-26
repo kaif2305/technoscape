@@ -2,20 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
-/* html {
-  overflow-y: scroll;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-}
-* {
-  box-sizing: border-box;
-} */
-/* body {
-  /* overflow-y: visible;
-  position: relative;
-  font-family: "Euclid Circular A", "Poppins"; */
-
 html,
 body {
   margin: 0;
@@ -23,23 +9,23 @@ body {
 }
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "lora";
 }
 
-body{
+body {
   background: #ffffff;
 }
 
-.wrapper{
+.wrapper {
   margin-top: 60px;
   text-align: center;
 }
 
-.wrapper h1{
+.wrapper h1 {
   font-family: "lora";
   font-size: 30px;
   font-weight: 400;
@@ -48,7 +34,7 @@ body{
   margin-top: 10px;
 }
 
-.our_team{
+.our_team {
   width: auto;
   display: flex;
   justify-content: center;
@@ -56,7 +42,7 @@ body{
   margin-bottom: 3%;
 }
 
-.our_team .team_member{
+.our_team .team_member {
   width: 300px;
   margin: 15px;
   background: #ffffff;
@@ -64,18 +50,18 @@ body{
 }
 
 
-.our_team .team_member .member_img img{
+.our_team .team_member .member_img img {
   width: 60%;
   height: 60%;
   object-fit: contain;
 }
 
-.our_team .team_member .member1_img img{
+.our_team .team_member .member1_img img {
   width: 40%;
   height: 70%;
 }
 
-.our_team .team_member h3{
+.our_team .team_member h3 {
   text-transform: uppercase;
   font-size: 15px;
   line-height: 18px;
@@ -83,11 +69,11 @@ body{
   margin: 15px 0 0px;
 }
 
-.our_team .team_member span{
+.our_team .team_member span {
   font-size: 10px;
 }
 
-.our_team .team_member p{
+.our_team .team_member p {
   margin-top: 20px;
   font-size: 14px;
   line-height: 20px;
@@ -95,15 +81,15 @@ body{
 }
 
 
-.our_team .team_member .member_img .social_media .item{
+.our_team .team_member .member_img .social_media .item {
   margin: 0 10px;
 }
 
-.our_team .team_member .member_img .social_media .fab{
+.our_team .team_member .member_img .social_media .fab {
   color: #8c7ae6;
   font-size: 20px;
 }
 
-.our_team .team_member .member_img:hover .social_media{
+.our_team .team_member .member_img:hover .social_media {
   transform: scale(1);
 }
