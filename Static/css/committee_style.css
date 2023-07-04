@@ -31,15 +31,22 @@ body {
 
 /* Chief Patrons */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
   /* background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); */
 }
@@ -234,6 +241,7 @@ body {
   #title {
     font-size: 25px;
   }
+
   .Cprof-img img {
     width: 30%;
   }
@@ -618,6 +626,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
   .Sprof-info-outer4 {
     width: 600px;
     display: inline-block;
@@ -690,6 +699,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
   .Sprof-info-outer4 {
     width: 600px;
     display: inline-block;
@@ -764,6 +774,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
   .Sprof-info-outer4 {
     width: 600px;
     display: inline-block;
@@ -791,6 +802,7 @@ body {
     font-size: 12px;
   }
 }
+
 /* @media screen and (max-width:1400px) {
     .steering-committee
     {
