@@ -131,7 +131,7 @@ body {
   position: relative;
   background-color: #fafafa;
   padding-top: 0.6%;
-  color: red;
+  color:rgba(32, 157, 216, 1);
   font-weight: 600;
   font-size: calc(1*(1vh + 1vw));
 
